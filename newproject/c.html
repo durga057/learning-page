@@ -1,0 +1,295 @@
+
+<html lang="en">
+<head>
+<title>C language</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* Scope for the tutorial section */
+.tutorial-wrapper {
+    display: flex;
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin:0;
+}
+
+/* Scoped Sidebar styling */
+.tutorial-wrapper .sidebar {
+    width: 250px;
+    background-color: #333;
+    padding: 20px;
+    margin-top: 10px;
+    height: 100vh;
+    
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.tutorial-wrapper .sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.tutorial-wrapper .sidebar h3 {
+    color: #ccc;
+    margin: 20px 0 10px;
+    font-size: 18px;
+}
+
+.tutorial-wrapper .sidebar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.tutorial-wrapper .sidebar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Main content area scoped styling */
+.tutorial-wrapper .content {
+    /*margin-left: 270px; Leaves space for sidebar */
+    padding: 40px;
+    background-color: white;
+    width: calc(100% - 270px);
+    min-height: 100vh;
+}
+
+.tutorial-wrapper .content h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tutorial-wrapper .content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section {
+            display: none; /* All sections hidden by default */
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section.active {
+            display: block; /* Only the active section is shown */
+        }
+
+</style>
+</head>
+<body>
+    <!--header section starts     ---->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">LEARNING PAGE</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses.." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="images/pic1.jpg" alt="photo">
+                <h3>Durga</h3>
+                <span>student</span>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html"  class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+
+<div class="side-bar">
+    <div class="close-side-bar" >
+        <i class="fa fa-times"></i>
+    </div>
+    <div class="profile">
+        <img src="images/pic1.jpg" alt="photo">
+        <h3>Durga</h3>
+        <span>student</span>
+        <a href="profile.html" class="btn">view profile</a>
+    </div>
+    <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span >home</span></a>
+        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+        <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+
+
+    </nav>
+    </div>
+    <div class="tutorial-wrapper">
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+        <h2>C Tutorial</h2>
+        <a href="#" class="nav-link" data-target="home">C HOME</a>
+        <a href="#" class="nav-link" data-target="intro">C Intro</a>
+        <a href="#" class="nav-link" data-target="Started">C Get Started</a>
+        <a href="#" class="nav-link" data-target="syntax">C Syntax</a>
+        <a href="#">C Output</a>
+        <a href="#">C Comments</a>
+        <a href="#">C Variables</a>
+        <a href="#">C Data Types</a>
+        <a href="#">C Constants</a>
+        <a href="#">C Operators</a>
+        <a href="#">C Booleans</a>
+        <a href="#">C If...Else</a>
+        <a href="#">C Switch</a>
+        <a href="#">C While Loop</a>
+        <a href="#">C For Loop</a>
+        <a href="#">C Break/Continue</a>
+        <a href="#">C Arrays</a>
+        <a href="#">C Strings</a>
+        <a href="#">C User Input</a>
+        <a href="#">C Memory Address</a>
+        <a href="#">C Pointers</a>
+
+        <h3>C Functions</h3>
+        <a href="#">C Functions</a>
+        <a href="#">C Function Parameters</a>
+        <a href="#">C Scope</a>
+        <a href="#">C Function Declaration</a>
+        <a href="#">C Recursion</a>
+        <a href="#">C Math Functions</a>
+
+        <h3>C Files</h3>
+        <a href="#">C Create Files</a>
+        <a href="#">C Write To Files</a>
+        <a href="#">C Read Files</a>
+
+        <h3>C Structures</h3>
+        <a href="#">C Structures</a>
+
+        <h3>C Enums</h3>
+        <a href="#">C Enums</a>
+
+        <h3>C Memory</h3>
+        <a href="#">C Memory Management</a>
+
+        <h3>C Reference</h3>
+        <a href="#">C Keywords</a>
+        <a href="#">C &lt;stdio.h&gt;</a>
+        <a href="#">C &lt;stdlib.h&gt;</a>
+        <a href="#">C &lt;string.h&gt;</a>
+        <a href="#">C &lt;math.h&gt;</a>
+        <a href="#">C &lt;ctype.h&gt;</a>
+
+        <h3>C Examples</h3>
+        <a href="#">C Examples</a>
+    </div>
+
+    <!-- Main content area -->
+    
+<div class="content">
+    <h1>Welcome to the C Programming Tutorial</h1>
+    <p>Here you can find all the resources to learn and master the C programming language. Use the sidebar to navigate through the topics.</p>
+    
+    <div id="home" class="content-section active">
+<h2>Welcome to C Programming Tutorial</h2>
+<p>This is the home section. Here you'll find an overview of the C programming language.</p>
+</div>
+
+<div id="intro" class="content-section">
+<h2>Introduction to C Programming</h2>
+<p>C is a powerful general-purpose programming language. It is fast, portable, and available on all platforms.</p>
+</div>
+
+<div id="syntax" class="content-section">
+<h2>C Syntax</h2>
+<p>The syntax of C refers to the rules that define the structure of valid statements in C.</p>
+</div>
+
+<div id="Started" class="content-section">
+<h2>Get Started With C</h2>
+<p>To start using C, you need two things:
+
+    A text editor, like Notepad, to write C code
+        A compiler, like GCC, to translate the C code into a language that the computer will understand
+        There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see below).
+
+    C Install IDE
+An IDE (Integrated Development Environment) is used to edit AND compile the code.
+
+Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C code.
+
+Note: Web-based IDE's can work as well, but functionality is limited.
+
+We will use Code::Blocks in our tutorial, which we believe is a good place to start.
+
+You can find the latest version of Codeblocks at http://www.codeblocks.org/. Download the mingw-setup.exe file, which will install the text editor with a compiler.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+ <!--footer  section starts     ---->
+<footer class="footer">
+    &copy; copyright @2025 by <span>Durga</span>
+</footer>
+ <!-- custom js link     ---->
+    
+    <script>
+        // Select all navigation links and content sections
+        const navLinks = document.querySelectorAll('.nav-link');
+        const contentSections = document.querySelectorAll('.content-section');
+
+        // Add event listener to each link
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default anchor click behavior
+
+                // Remove active class from all content sections
+                contentSections.forEach(section => section.classList.remove('active'));
+
+                // Get the target section from the clicked link's data-target attribute
+                const target = this.getAttribute('data-target');
+                document.getElementById(target).classList.add('active'); // Show the corresponding section
+            });
+        });
+
+        let body =document.body;
+
+        let sideBar = document.querySelector('.side-bar');
+document.querySelector('#menu-btn').onclick =() =>{
+   sideBar.classList.toggle('active');
+   body.classList.toggle('active');
+}
+
+
+document.querySelector('.side-bar .close-side-bar').onclick =() =>{
+   sideBar.classList.remove('active');
+   body.classList.remove('active');
+}
+    </script>
+</body>
+</html>

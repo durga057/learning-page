@@ -1,0 +1,328 @@
+<html lang="en">
+<head>
+<title>course playlist</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* Styling tab elements for courses */
+    .playlist-tabs {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        border-bottom: var(--border);
+        padding-bottom: 1rem;
+    }
+    .tab-btn {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        background: none;
+        cursor: pointer;
+        color: var(--light-color);
+        transition: all 0.2s linear;
+        border-radius: .5rem;
+    }
+    .tab-btn.active, .tab-btn:hover {
+        color: var(--white);
+        background-color: var(--main-color);
+    }
+    .tab-content {
+        display: none;
+        padding: 2rem 0;
+    }
+    .tab-content.active {
+        display: block;
+    }
+    .tab-content p {
+        font-size: 1.6rem;
+        color: var(--light-color);
+        line-height: 1.8;
+    }
+    .tab-content .instructor-box {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        background-color: var(--white);
+        border: var(--border);
+        padding: 2rem;
+        border-radius: .5rem;
+    }
+    .tab-content .instructor-box img {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .tab-content .instructor-box h3 {
+        font-size: 2rem;
+        color: var(--black);
+        margin-bottom: .5rem;
+    }
+    .tab-content .instructor-box span {
+        font-size: 1.5rem;
+        color: var(--light-color);
+    }
+    .download-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .download-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--white);
+        border: var(--border);
+        padding: 1.5rem 2rem;
+        border-radius: .5rem;
+    }
+    .download-item span {
+        font-size: 1.6rem;
+        color: var(--black);
+        font-weight: 500;
+    }
+    .download-item a {
+        font-size: 1.5rem;
+    }
+    .video-player-container {
+        background-color: #000;
+        border-radius: .5rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        position: relative;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+    .video-player-container iframe, .video-player-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
+</head>
+<body>
+    <!--header section starts     ---->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">LEARNING PAGE</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses.." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="images/pic1.jpg" alt="photo">
+                <h3>Durga</h3>
+                <span>student</span>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="side-bar">
+        <div class="close-side-bar">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="profile">
+            <img src="images/pic1.jpg" alt="photo">
+            <h3>Durga</h3>
+            <span>student</span>
+            <a href="profile.html" class="btn">view profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+        </nav>
+    </div>
+
+    <!-- Playlist main content -->
+    <section class="playlist">
+        <h1 class="heading" id="course-title">Loading course details...</h1>
+        
+        <div class="row">
+            <div class="col" style="flex: 1.8 1 50rem;">
+                <!-- Video player -->
+                <div class="video-player-container">
+                    <iframe id="video-frame" src="" allowfullscreen></iframe>
+                </div>
+                
+                <h3 id="current-video-title" style="font-size: 2.2rem; color: var(--black); margin-bottom: 1rem;">Video Title</h3>
+                
+                <!-- Playlist Tabs -->
+                <div class="playlist-tabs">
+                    <button class="tab-btn active" data-tab="overview">Overview</button>
+                    <button class="tab-btn" data-tab="instructor">Instructor</button>
+                    <button class="tab-btn" data-tab="materials">Study Materials</button>
+                </div>
+
+                <!-- Tab contents -->
+                <div class="tab-content active" id="tab-overview">
+                    <p id="course-desc">Course description goes here...</p>
+                </div>
+                
+                <div class="tab-content" id="tab-instructor">
+                    <div class="instructor-box">
+                        <img id="instructor-avatar" src="images/pic1.jpg" alt="Instructor avatar">
+                        <div>
+                            <h3 id="instructor-name">Instructor Name</h3>
+                            <span id="instructor-role">Role</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-materials">
+                    <div class="download-list" id="resources-list">
+                        <!-- Resources will be dynamically listed here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Videos playlist navigation sidebar -->
+            <div class="col" style="flex: 1.2 1 35rem;">
+                <div class="videos-container" style="background-color: var(--white); border-radius: .5rem; padding: 2rem; border: var(--border);">
+                    <h3 style="font-size: 2rem; color: var(--black); margin-bottom: 1.5rem; border-bottom: var(--border); padding-bottom: 1rem;">Course Playlist</h3>
+                    <div id="playlist-list" style="display: flex; flex-direction: column; gap: 1rem; max-height: 45rem; overflow-y: auto; padding-right: .5rem;">
+                        <!-- Playlist videos dynamically added -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer  section starts     ---->
+    <footer class="footer">
+        &copy; copyright @2025 by <span>Durga</span>
+    </footer>
+    
+    <!-- custom js link     ---->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Tab switcher
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    btn.classList.add('active');
+                    const tabId = 'tab-' + btn.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Fetch course parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const courseKey = urlParams.get('course') || 'html';
+
+            // Fetch database
+            fetch('data/courses.json')
+                .then(response => response.json())
+                .then(data => {
+                    const course = data[courseKey];
+                    if (!course) {
+                        document.getElementById('course-title').textContent = "Course Not Found";
+                        return;
+                    }
+
+                    // Render Course Details
+                    document.title = course.title;
+                    document.getElementById('course-title').textContent = course.title;
+                    document.getElementById('course-desc').textContent = course.description;
+                    document.getElementById('instructor-name').textContent = course.instructor;
+                    document.getElementById('instructor-role').textContent = course.role;
+                    if(course.avatar) {
+                        document.getElementById('instructor-avatar').src = course.avatar;
+                    }
+
+                    // Render Videos List
+                    const playlistContainer = document.getElementById('playlist-list');
+                    playlistContainer.innerHTML = '';
+                    
+                    course.playlist.forEach((video, index) => {
+                        const videoItem = document.createElement('div');
+                        videoItem.style.display = 'flex';
+                        videoItem.style.alignItems = 'center';
+                        videoItem.style.gap = '1rem';
+                        videoItem.style.padding = '1rem';
+                        videoItem.style.borderRadius = '.5rem';
+                        videoItem.style.border = 'var(--border)';
+                        videoItem.style.cursor = 'pointer';
+                        videoItem.style.transition = 'all 0.2s linear';
+                        videoItem.className = 'playlist-video-item';
+                        if (index === 0) {
+                            videoItem.style.backgroundColor = 'var(--light-bg)';
+                        }
+
+                        videoItem.innerHTML = `
+                            <div style="position: relative; width: 8rem; height: 5rem; flex-shrink: 0; border-radius: .3rem; overflow: hidden;">
+                                <img src="${course.thumbnail}" style="width: 100%; height: 100%; object-fit: cover;">
+                                <span style="position: absolute; bottom: .2rem; right: .2rem; font-size: 1rem; color: #fff; background-color: rgba(0,0,0,0.6); padding: .1rem .4rem; border-radius: .2rem;">${video.duration}</span>
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="font-size: 1.4rem; color: var(--black); line-height: 1.3; font-weight: 500;">${video.title}</h4>
+                            </div>
+                        `;
+
+                        // Video click plays the video
+                        videoItem.addEventListener('click', () => {
+                            document.querySelectorAll('.playlist-video-item').forEach(item => {
+                                item.style.backgroundColor = 'transparent';
+                            });
+                            videoItem.style.backgroundColor = 'var(--light-bg)';
+                            playVideo(video.url, video.title);
+                        });
+
+                        playlistContainer.appendChild(videoItem);
+                    });
+
+                    // Render Study Materials
+                    const resourcesContainer = document.getElementById('resources-list');
+                    resourcesContainer.innerHTML = '';
+                    if (course.resources && course.resources.length > 0) {
+                        course.resources.forEach(res => {
+                            const resourceItem = document.createElement('div');
+                            resourceItem.className = 'download-item';
+                            resourceItem.innerHTML = `
+                                <span>${res.title}</span>
+                                <button onclick="downloadResource('${res.url}', '${res.title}')" class="inline-btn" style="margin-top: 0; padding: .6rem 1.5rem; font-size: 1.4rem;"><i class="fas fa-download" style="margin-right: .5rem;"></i> Download</button>
+                            `;
+                            resourcesContainer.appendChild(resourceItem);
+                        });
+                    } else {
+                        resourcesContainer.innerHTML = '<p>No study materials uploaded for this course yet.</p>';
+                    }
+
+                    // Play first video initially
+                    if (course.playlist.length > 0) {
+                        playVideo(course.playlist[0].url, course.playlist[0].title);
+                    }
+                })
+                .catch(err => {
+                    console.error("Error loading course data", err);
+                    document.getElementById('course-title').textContent = "Error loading course";
+                });
+
+            function playVideo(url, title) {
+                document.getElementById('video-frame').src = url;
+                document.getElementById('current-video-title').textContent = title;
+            }
+        });
+    </script>
+</body>
+</html>

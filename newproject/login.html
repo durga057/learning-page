@@ -1,0 +1,81 @@
+
+<html lang="en">
+<head>
+<title>login page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--header section starts     ---->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">LEARNING PAGE</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses.." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="images/pic1.jpg" alt="photo">
+                <h3>Durga</h3>
+                <span>student</span>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html"  class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+<div class="side-bar">
+    <div class="close-side-bar">
+        <i class="fa fa-times"></i>
+    </div>
+    <div class="profile">
+        <img src="images/pic1.jpg" alt="photo">
+        <h3>Durga</h3>
+        <span>student</span>
+        <a href="profile.html" class="btn">view profile</a>
+    </div>
+    <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>  
+        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+        <a href="contact.html"><i class="fas fa-headset"></i><span>Contact Us</span></a>
+    </nav>
+</div>
+
+<section class="form-container">
+
+    <form action="" method="post" enctype="multipart/form-data" class="login">
+       <h3>welcome back!</h3>
+       <p>your email <span>*</span></p>
+       <input type="email" name="email" placeholder="enter your email" maxlength="50" required class="box">
+       <p>your password <span>*</span></p>
+       <input type="password" name="pass" placeholder="enter your password" maxlength="20" required class="box">
+       <p class="link">have you forget password <a href="#">Forget password</a></p>
+       <p class="link">don't have an account? <a href="register.html">SIGNUP</a></p>
+       <input type="submit" name="submit" value="login now" class="btn">
+       <div class="google-login">
+        <img src="images/image.png" alt="Google Logo">
+        <a href="#" class="google-btn">Login with Google</a>
+    </div>
+    </form>
+ 
+ </section>
+
+ <!--footer  section starts     ---->
+<footer class="footer">
+    &copy; copyright @2025 by <span>Durga</span>
+</footer>
+ <!-- custom js link     ---->
+    <script src="js/main.js"></script>
+</body>
+</html>

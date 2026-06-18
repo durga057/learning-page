@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+    <title>contact page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--header section starts     ---->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">LEARNING PAGE</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses.." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="branches">
+                <a href="branches.html" class="option-btn">Branches</a>
+            </div>
+            <div class="profile">
+                <img src="images/pic1.jpg" alt="photo">
+                <h3>Durga</h3>
+                <span>student</span>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <div class="side-bar">
+        <div class="close-side-bar">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="profile">
+            <img src="images/pic1.jpg" alt="photo">
+            <h3>Durga</h3>
+            <span>student</span>
+            <a href="profile.html" class="btn">view profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+
+
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>Contact Us</span></a>
+        </nav>
+    </div>
+
+    <section class="contact">
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+
+            <form action="" method="post">
+                <h3>get in touch</h3>
+                <input type="text" placeholder="enter your name" required maxlength="100" name="name" class="box">
+                <input type="email" placeholder="enter your email" required maxlength="100" name="email" class="box">
+                <input type="number" min="0" max="9999999999" placeholder="enter your number" required maxlength="10"
+                    name="number" class="box">
+                <textarea name="msg" class="box" placeholder="enter your message" required cols="30" rows="10"
+                    maxlength="1000"></textarea>
+                <input type="submit" value="send message" class="inline-btn" name="submit">
+            </form>
+
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <a href="tel:1234567890">-----------</a>
+                <a href="tel:1234567890">-----------</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>email address</h3>
+                <a href="mailto:example@gmail.com">hotmail@gmail.com</a>
+                <a href="mailto:example@gmail.com">yahoo@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3> address</h3>
+                <a href="#">....</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+
+
+
+
+
+
+
+    <!--footer  section starts     ---->
+    <footer class="footer">
+        &copy; copyright @2025 by <span>Durga</span>
+    </footer>
+    <!-- custom js link     ---->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

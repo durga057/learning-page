@@ -1,0 +1,185 @@
+
+<html lang="en">
+<head>
+<title>register</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+    
+/* General form styling */
+.register {
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Flex container for form fields */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Column styling for inputs */
+.col {
+    width: 48%;
+}
+
+/* Styling for input fields */
+.box {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Styling for file input */
+input[type="file"] {
+    border: none;
+    padding-left: 0;
+}
+
+/* Required asterisk styling */
+p span {
+    color: red;
+}
+
+/* Link styling */
+.link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a {
+    font-size: 14px;
+    color: #4285F4;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/* Submit button styling */
+.btn {
+    width: 100%;
+    padding: 10px;
+    /* background-color: #28a745; */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+
+
+
+    
+</style>
+</head>
+<body>
+    <!--header section starts     ---->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">LEARNING PAGE</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses.." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="images/pic1.jpg" alt="photo">
+                <h3>student name</h3>
+                <span>student</span>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html"  class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+<div class="side-bar">
+    <div class="close-side-bar">
+        <i class="fa fa-times"></i>
+    </div>
+    <div class="profile">
+        <img src="images/pic1.jpg" alt="photo">
+        <h3>student name</h3>
+        <span>student</span>
+        <a href="profile.html" class="btn">view profile</a>
+    </div>
+    <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>  
+        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+        <a href="contact.html"><i class="fas fa-headset"></i><span>Contact Us</span></a>
+    </nav>
+</div>
+<form class="register" action="" method="post" enctype="multipart/form-data">
+    <h3>create account</h3>
+    <div class="flex">
+       <div class="col">
+          <p>your name <span>*</span></p>
+          <input type="text" name="name" placeholder="eneter your name" maxlength="50" required class="box">
+          <p>your email <span>*</span></p>
+          <input type="email" name="email" placeholder="enter your email" maxlength="20" required class="box">
+       </div>
+       <div class="col">
+          <p>your password <span>*</span></p>
+          <input type="password" name="pass" placeholder="enter your password" maxlength="20" required class="box">
+          <p>confirm password <span>*</span></p>
+          <input type="password" name="cpass" placeholder="confirm your password" maxlength="20" required class="box">
+       </div>
+    </div>
+    
+    <p class="link">already have an account? <a href="login.html">login now</a></p>
+    <input type="submit" name="submit" value="register now" class="btn">
+ </form>
+
+
+
+ <!--footer  section starts     ---->
+<footer class="footer">
+    &copy; copyright @2025 by <span>Durga</span>
+</footer>
+ <!-- custom js link     ---->
+    <script src="js/main.js"></script>
+</body>
+</html>

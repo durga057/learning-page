@@ -1,0 +1,381 @@
+<html lang="en">
+<head>
+<title>branch syllabus</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+<link rel="stylesheet" href="css/styles.css">
+<style>
+    /* Styling adaptations for branch syllabus and PDF previewer */
+    main {
+        max-width: 1300px;
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+        display: flex;
+        gap: 2.5rem;
+        align-items: flex-start;
+    }
+    .sidebar {
+        width: 260px;
+        flex-shrink: 0;
+        background: var(--white);
+        border-radius: 0.5rem;
+        border: var(--border);
+        padding: 1.5rem;
+    }
+    .syllabus-workspace {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .content-box {
+        background: var(--white);
+        border-radius: 0.5rem;
+        border: var(--border);
+        padding: 2rem;
+    }
+    .pdf-viewer-container {
+        display: none;
+        background: var(--white);
+        border-radius: 0.5rem;
+        border: var(--border);
+        padding: 2rem;
+        position: relative;
+    }
+    .pdf-viewer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        border-bottom: var(--border);
+        padding-bottom: 1rem;
+    }
+    .pdf-viewer-header h3 {
+        font-size: 1.8rem;
+        color: var(--black);
+    }
+    .close-viewer-btn {
+        background-color: var(--red);
+        color: var(--white);
+        padding: .5rem 1rem;
+        font-size: 1.4rem;
+        border-radius: .3rem;
+        cursor: pointer;
+    }
+    .pdf-frame {
+        width: 100%;
+        height: 600px;
+        border: var(--border);
+        border-radius: 0.375rem;
+    }
+    .subject-row h3 {
+        font-size: 1.8rem;
+        color: var(--black);
+        font-weight: 500;
+        margin-right: 2rem;
+    }
+    .download-buttons .preview-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 1.4rem;
+        background-color: var(--light-bg);
+        color: var(--black);
+        border-radius: 0.375rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        border: var(--border);
+    }
+    .download-buttons .preview-btn:hover {
+        background-color: var(--main-color);
+        color: var(--white);
+    }
+    .download-buttons .download-ico {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.2rem;
+        height: 3.2rem;
+        background-color: var(--light-bg);
+        color: var(--black);
+        border-radius: 0.375rem;
+        cursor: pointer;
+        border: var(--border);
+        transition: all 0.2s;
+    }
+    .download-buttons .download-ico:hover {
+        background-color: var(--main-color);
+        color: var(--white);
+    }
+    .subject-action-group {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        border: var(--border);
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: var(--light-bg);
+    }
+    .subject-action-group span {
+        font-size: 1.3rem;
+        color: var(--light-color);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .subject-action-group-container {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+</style>
+</head>
+<body>
+    <!--header section starts     ---->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">LEARNING PAGE</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses.." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="images/pic1.jpg" alt="photo">
+                <h3>Durga</h3>
+                <span>student</span>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="side-bar">
+        <div class="close-side-bar">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="profile">
+            <img src="images/pic1.jpg" alt="photo">
+            <h3>Durga</h3>
+            <span>student</span>
+            <a href="profile.html" class="btn">view profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+        </nav>
+    </div>
+
+    <!-- Main Workspace -->
+    <main>
+        <aside class="sidebar">
+            <div class="year-container">
+                <button class="year-button" data-year="1">
+                    1st Year
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <div class="semester-list">
+                    <button class="semester-button" data-sem="1-1">Semester 1</button>
+                    <button class="semester-button" data-sem="1-2">Semester 2</button>
+                </div>
+            </div>
+
+            <div class="year-container">
+                <button class="year-button" data-year="2">
+                    2nd Year
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <div class="semester-list">
+                    <button class="semester-button" data-sem="2-1">Semester 1</button>
+                    <button class="semester-button" data-sem="2-2">Semester 2</button>
+                </div>
+            </div>
+
+            <div class="year-container">
+                <button class="year-button" data-year="3">
+                    3rd Year
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <div class="semester-list">
+                    <button class="semester-button" data-sem="3-1">Semester 1</button>
+                    <button class="semester-button" data-sem="3-2">Semester 2</button>
+                </div>
+            </div>
+
+            <div class="year-container">
+                <button class="year-button" data-year="4">
+                    4th Year
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <div class="semester-list">
+                    <button class="semester-button" data-sem="4-1">Semester 1</button>
+                    <button class="semester-button" data-sem="4-2">Semester 2</button>
+                </div>
+            </div> 
+            
+            <div class="year-container">
+                <button class="year-button" data-year="5">
+                    Skill Courses
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <div class="semester-list">
+                    <button class="semester-button" data-sem="5-1">Additional Courses</button>
+                </div>
+            </div> 
+        </aside>
+
+        <!-- Right Side Syllabus Panel -->
+        <div class="syllabus-workspace">
+            <div class="content-box">
+                <h2 id="semester-header-title" style="font-size: 2.5rem; font-weight: 600; color: var(--black); margin-bottom: 1.5rem; border-bottom: var(--border); padding-bottom: 1rem;">Loading branch syllabus...</h2>
+                <div class="subjects-grid" id="subjects-container">
+                    <!-- Dynamic subjects listing -->
+                </div>
+            </div>
+
+            <!-- Integrated PDF Viewer -->
+            <div class="pdf-viewer-container" id="pdf-panel">
+                <div class="pdf-viewer-header">
+                    <h3 id="pdf-title-label">Document Preview</h3>
+                    <button class="close-viewer-btn" id="close-pdf-panel"><i class="fas fa-times"></i> Close Preview</button>
+                </div>
+                <iframe class="pdf-frame" id="pdf-iframe" src=""></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!--footer  section starts     ---->
+    <footer class="footer">
+        &copy; copyright @2025 by <span>Durga</span>
+    </footer>
+
+    <!-- custom js link     ---->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Expand/Collapse Year Containers
+            const sidebarYears = document.querySelectorAll('.year-button');
+            sidebarYears.forEach(button => {
+                button.addEventListener('click', () => {
+                    const container = button.parentElement;
+                    const isActive = container.classList.contains('active');
+
+                    // Close all other year containers
+                    document.querySelectorAll('.year-container').forEach(c => {
+                        c.classList.remove('active');
+                    });
+
+                    // Toggle current
+                    if (!isActive) {
+                        container.classList.add('active');
+                    }
+                });
+            });
+
+            // Read URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const branchKey = urlParams.get('branch') || 'CSE';
+
+            let branchData = null;
+
+            // Load Syllabus DB
+            fetch('data/syllabus.json')
+                .then(res => res.json())
+                .then(data => {
+                    branchData = data[branchKey];
+                    if (!branchData) {
+                        document.getElementById('semester-header-title').textContent = "Branch Not Found";
+                        return;
+                    }
+
+                    document.title = branchData.title + " Syllabus";
+                    
+                    // Show 1st Year Sem 1 initially
+                    showSemester('1-1');
+
+                    // Attach event listeners to semester buttons
+                    document.querySelectorAll('.semester-button').forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            document.querySelectorAll('.semester-button').forEach(b => b.classList.remove('active'));
+                            btn.classList.add('active');
+                            const semKey = btn.getAttribute('data-sem');
+                            showSemester(semKey);
+                        });
+                    });
+                })
+                .catch(err => {
+                    console.error("Error loading syllabus database", err);
+                    document.getElementById('semester-header-title').textContent = "Error loading syllabus data";
+                });
+
+            function showSemester(semKey) {
+                if (!branchData || !branchData.semesters[semKey]) return;
+
+                const sem = branchData.semesters[semKey];
+                document.getElementById('semester-header-title').textContent = branchData.title + " - " + sem.title;
+
+                const subjectsContainer = document.getElementById('subjects-container');
+                subjectsContainer.innerHTML = '';
+
+                sem.subjects.forEach(subject => {
+                    const row = document.createElement('div');
+                    row.className = 'subject-row';
+                    
+                    row.innerHTML = `
+                        <h3>${subject.name}</h3>
+                        <div class="subject-action-group-container">
+                            <div class="subject-action-group">
+                                <span>Notes</span>
+                                <div class="download-buttons">
+                                    <button class="preview-btn" onclick="previewPDF('${subject.notes}', '${subject.name} - Notes')"><i class="fas fa-eye"></i> View</button>
+                                    <button class="download-ico" onclick="downloadResource('${subject.notes}', '${subject.name} Notes')"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="subject-action-group">
+                                <span>Syllabus</span>
+                                <div class="download-buttons">
+                                    <button class="preview-btn" onclick="previewPDF('${subject.syllabus}', '${subject.name} - Syllabus')"><i class="fas fa-eye"></i> View</button>
+                                    <button class="download-ico" onclick="downloadResource('${subject.syllabus}', '${subject.name} Syllabus')"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                            <div class="subject-action-group">
+                                <span>QPapers</span>
+                                <div class="download-buttons">
+                                    <button class="preview-btn" onclick="previewPDF('${subject.papers}', '${subject.name} - Question Papers')"><i class="fas fa-eye"></i> View</button>
+                                    <button class="download-ico" onclick="downloadResource('${subject.papers}', '${subject.name} Question Papers')"><i class="fas fa-download"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    subjectsContainer.appendChild(row);
+                });
+            }
+
+            // PDF Preview Handler
+            window.previewPDF = function(pdfPath, title) {
+                document.getElementById('pdf-title-label').textContent = title;
+                document.getElementById('pdf-iframe').src = pdfPath;
+                document.getElementById('pdf-panel').style.display = 'block';
+                // Smooth scroll to the PDF previewer
+                document.getElementById('pdf-panel').scrollIntoView({ behavior: 'smooth' });
+            };
+
+            // Close PDF Panel
+            document.getElementById('close-pdf-panel').addEventListener('click', () => {
+                document.getElementById('pdf-panel').style.display = 'none';
+                document.getElementById('pdf-iframe').src = '';
+            });
+        });
+    </script>
+</body>
+</html>

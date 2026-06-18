@@ -1,0 +1,392 @@
+{
+  "html": {
+    "title": "Complete HTML Tutorial",
+    "description": "Master HyperText Markup Language (HTML5) from the absolute ground up. You will learn about page structure, semantic elements, forms, media, tables, and SEO best practices to build modern web page layouts.",
+    "thumbnail": "images/thumb1.png",
+    "instructor": "Dr. Durga",
+    "role": "Senior Web Developer",
+    "avatar": "images/pic1.jpg",
+    "totalVideos": 6,
+    "playlist": [
+      {
+        "title": "Introduction to HTML5 & Web Structure",
+        "url": "https://www.youtube.com/embed/ok-plXXHlWw",
+        "duration": "12:45",
+        "thumbnail": "images/thumb1.png"
+      },
+      {
+        "title": "HTML Headings, Paragraphs, and Text Formatting",
+        "url": "https://www.youtube.com/embed/ok-plXXHlWw",
+        "duration": "08:30",
+        "thumbnail": "images/thumb1.png"
+      },
+      {
+        "title": "Working with Lists and Hyperlinks",
+        "url": "https://www.youtube.com/embed/ok-plXXHlWw",
+        "duration": "15:20",
+        "thumbnail": "images/thumb1.png"
+      },
+      {
+        "title": "Images, Audio, and Video Elements",
+        "url": "https://www.youtube.com/embed/ok-plXXHlWw",
+        "duration": "10:15",
+        "thumbnail": "images/thumb1.png"
+      },
+      {
+        "title": "HTML Tables & Forms Deep Dive",
+        "url": "https://www.youtube.com/embed/ok-plXXHlWw",
+        "duration": "22:10",
+        "thumbnail": "images/thumb1.png"
+      },
+      {
+        "title": "HTML5 Semantic Tags & Basic SEO",
+        "url": "https://www.youtube.com/embed/ok-plXXHlWw",
+        "duration": "14:50",
+        "thumbnail": "images/thumb1.png"
+      }
+    ],
+    "resources": [
+      {
+        "title": "HTML5 Quick Reference Guide",
+        "url": "pdfs/pandas.pdf"
+      },
+      {
+        "title": "HTML Cheat Sheet",
+        "url": "pdfs/pandas.pdf"
+      }
+    ]
+  },
+  "css": {
+    "title": "Complete CSS Tutorial",
+    "description": "Learn Cascading Style Sheets (CSS3) to style, format, and design your web pages. Cover selectors, color models, typography, the Box Model, Flexbox, Grid layouts, and responsive media queries.",
+    "thumbnail": "images/thumb2.jpg",
+    "instructor": "Prof. Swaroop",
+    "role": "Lead UI/UX Designer",
+    "avatar": "images/pic1.jpg",
+    "totalVideos": 5,
+    "playlist": [
+      {
+        "title": "Introduction to CSS3 Syntax & Selectors",
+        "url": "https://www.youtube.com/embed/yfoY53QXEnI",
+        "duration": "14:20",
+        "thumbnail": "images/thumb2.jpg"
+      },
+      {
+        "title": "Understanding the CSS Box Model",
+        "url": "https://www.youtube.com/embed/yfoY53QXEnI",
+        "duration": "11:15",
+        "thumbnail": "images/thumb2.jpg"
+      },
+      {
+        "title": "Colors, Backgrounds, and Fonts styling",
+        "url": "https://www.youtube.com/embed/yfoY53QXEnI",
+        "duration": "09:40",
+        "thumbnail": "images/thumb2.jpg"
+      },
+      {
+        "title": "Mastering Flexbox Layouts",
+        "url": "https://www.youtube.com/embed/yfoY53QXEnI",
+        "duration": "18:50",
+        "thumbnail": "images/thumb2.jpg"
+      },
+      {
+        "title": "CSS Grid & Responsive Design Media Queries",
+        "url": "https://www.youtube.com/embed/yfoY53QXEnI",
+        "duration": "25:30",
+        "thumbnail": "images/thumb2.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "CSS Flexbox & Grid Cheat Sheet",
+        "url": "pdfs/pandas.pdf"
+      }
+    ]
+  },
+  "javascript": {
+    "title": "Complete JS Tutorial",
+    "description": "Unlock the power of JavaScript to bring your websites to life. This course covers core JS syntax, DOM manipulation, variables, arrays, objects, events, functions, ES6+ features, and async API requests.",
+    "thumbnail": "images/thumb3.jpg",
+    "instructor": "Dr. Durga",
+    "role": "Senior Full-Stack Engineer",
+    "avatar": "images/pic1.jpg",
+    "totalVideos": 6,
+    "playlist": [
+      {
+        "title": "JavaScript Basics & Variables",
+        "url": "https://www.youtube.com/embed/W6NZfCO5SIk",
+        "duration": "10:50",
+        "thumbnail": "images/thumb3.jpg"
+      },
+      {
+        "title": "Conditional Logic & Loops",
+        "url": "https://www.youtube.com/embed/W6NZfCO5SIk",
+        "duration": "12:15",
+        "thumbnail": "images/thumb3.jpg"
+      },
+      {
+        "title": "Functions & Scope in JavaScript",
+        "url": "https://www.youtube.com/embed/W6NZfCO5SIk",
+        "duration": "15:30",
+        "thumbnail": "images/thumb3.jpg"
+      },
+      {
+        "title": "Working with Arrays & Objects",
+        "url": "https://www.youtube.com/embed/W6NZfCO5SIk",
+        "duration": "18:40",
+        "thumbnail": "images/thumb3.jpg"
+      },
+      {
+        "title": "DOM Manipulation & Events",
+        "url": "https://www.youtube.com/embed/W6NZfCO5SIk",
+        "duration": "22:10",
+        "thumbnail": "images/thumb3.jpg"
+      },
+      {
+        "title": "Async JS: Promises & Fetch API",
+        "url": "https://www.youtube.com/embed/W6NZfCO5SIk",
+        "duration": "20:05",
+        "thumbnail": "images/thumb3.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Modern ES6+ Cheat Sheet",
+        "url": "pdfs/pandas.pdf"
+      }
+    ]
+  },
+  "bootstrap": {
+    "title": "Complete Bootstrap Tutorial",
+    "description": "Learn to style responsive mobile-first websites quickly using Bootstrap. Understand containers, the 12-column grid system, typography, utilities, and components like modals, navbars, and accordions.",
+    "thumbnail": "images/thumb5.jpg",
+    "instructor": "Mrs. P. Jagadeevi",
+    "role": "Assistant Professor",
+    "avatar": "images/pic1.jpg",
+    "totalVideos": 4,
+    "playlist": [
+      {
+        "title": "Getting Started with Bootstrap 5",
+        "url": "https://www.youtube.com/embed/c9B4TP91A4M",
+        "duration": "09:30",
+        "thumbnail": "images/thumb5.jpg"
+      },
+      {
+        "title": "Bootstrap Grid System & Flex Layouts",
+        "url": "https://www.youtube.com/embed/c9B4TP91A4M",
+        "duration": "15:40",
+        "thumbnail": "images/thumb5.jpg"
+      },
+      {
+        "title": "Styling Buttons, Cards, and Forms",
+        "url": "https://www.youtube.com/embed/c9B4TP91A4M",
+        "duration": "12:10",
+        "thumbnail": "images/thumb5.jpg"
+      },
+      {
+        "title": "Interactive Components: Navbars, Modals & Carousel",
+        "url": "https://www.youtube.com/embed/c9B4TP91A4M",
+        "duration": "18:25",
+        "thumbnail": "images/thumb5.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Bootstrap 5 Reference Card",
+        "url": "pdfs/pandas.pdf"
+      }
+    ]
+  },
+  "python": {
+    "title": "Complete Python Tutorial",
+    "description": "Master Python programming, from syntax, types, and loops to advanced modules, files, data structures, sets, numpy notes, and exception handling.",
+    "thumbnail": "images/thumb13.jpeg",
+    "instructor": "Mr. G. Sreekanth",
+    "role": "Assistant Professor, CSE",
+    "avatar": "images/pic1.jpg",
+    "totalVideos": 5,
+    "playlist": [
+      {
+        "title": "Python Installation & Basic Input Output",
+        "url": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+        "duration": "11:50",
+        "thumbnail": "images/thumb13.jpeg"
+      },
+      {
+        "title": "Lists, Tuples, and Dictionaries Methods",
+        "url": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+        "duration": "16:25",
+        "thumbnail": "images/thumb13.jpeg"
+      },
+      {
+        "title": "Sets and Modules in Python",
+        "url": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+        "duration": "14:10",
+        "thumbnail": "images/thumb13.jpeg"
+      },
+      {
+        "title": "Functions, Scope and Recursion",
+        "url": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+        "duration": "13:40",
+        "thumbnail": "images/thumb13.jpeg"
+      },
+      {
+        "title": "Exception Handling & File Operations",
+        "url": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+        "duration": "19:15",
+        "thumbnail": "images/thumb13.jpeg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Python Input Output Basics",
+        "url": "pdfs/INPUT AND OUTPUT BASICS (python).pdf"
+      },
+      {
+        "title": "Numpy Notes & Lab Practice",
+        "url": "pdfs/Numpy notes and lab practice.pdf"
+      },
+      {
+        "title": "Dictionaries Notes",
+        "url": "pdfs/dictionaries notes.pdf"
+      },
+      {
+        "title": "Recursion Function Notes",
+        "url": "pdfs/recursion function notes.pdf"
+      },
+      {
+        "title": "Sets Notes",
+        "url": "pdfs/setsnotes .pdf"
+      }
+    ]
+  },
+  "java": {
+    "title": "Complete Java Tutorial",
+    "description": "Learn Java Programming from variables and OOP concepts (Inheritance, Polymorphism, Encapsulation, Abstraction) to Exception Handling, Collections framework, and Multithreading.",
+    "thumbnail": "images/thumb11.jpeg",
+    "instructor": "Dr. A. V. Paramkusam",
+    "role": "HOD & Professor",
+    "avatar": "images/pic1.jpg",
+    "totalVideos": 5,
+    "playlist": [
+      {
+        "title": "Java Environment Setup & Syntax",
+        "url": "https://www.youtube.com/embed/eIrMbAQSU34",
+        "duration": "13:20",
+        "thumbnail": "images/thumb11.jpeg"
+      },
+      {
+        "title": "Object-Oriented Programming in Java",
+        "url": "https://www.youtube.com/embed/eIrMbAQSU34",
+        "duration": "24:15",
+        "thumbnail": "images/thumb11.jpeg"
+      },
+      {
+        "title": "Interfaces & Abstract Classes",
+        "url": "https://www.youtube.com/embed/eIrMbAQSU34",
+        "duration": "15:45",
+        "thumbnail": "images/thumb11.jpeg"
+      },
+      {
+        "title": "Exception Handling & File I/O",
+        "url": "https://www.youtube.com/embed/eIrMbAQSU34",
+        "duration": "18:10",
+        "thumbnail": "images/thumb11.jpeg"
+      },
+      {
+        "title": "Java Collections Framework",
+        "url": "https://www.youtube.com/embed/eIrMbAQSU34",
+        "duration": "22:30",
+        "thumbnail": "images/thumb11.jpeg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Java OOP Principles Cheat Sheet",
+        "url": "pdfs/pandas.pdf"
+      }
+    ]
+  },
+  "php": {
+    "title": "Complete PHP Tutorial",
+    "description": "Master backend web development using PHP. Learn server-side scripting, variables, request methods (GET & POST), sessions, cookie management, and connecting to database servers.",
+    "thumbnail": "images/thumb8.jpg",
+    "instructor": "Prof. Swaroop",
+    "role": "Full Stack Instructor",
+    "avatar": "images/pic1.jpg",
+    "totalVideos": 4,
+    "playlist": [
+      {
+        "title": "Introduction to PHP Server Environment",
+        "url": "https://www.youtube.com/embed/zZ6vybT1HQs",
+        "duration": "10:15",
+        "thumbnail": "images/thumb8.jpg"
+      },
+      {
+        "title": "PHP GET & POST Form Handling",
+        "url": "https://www.youtube.com/embed/zZ6vybT1HQs",
+        "duration": "14:35",
+        "thumbnail": "images/thumb8.jpg"
+      },
+      {
+        "title": "Sessions & Cookies in PHP",
+        "url": "https://www.youtube.com/embed/zZ6vybT1HQs",
+        "duration": "12:50",
+        "thumbnail": "images/thumb8.jpg"
+      },
+      {
+        "title": "Connecting PHP to MySQL Databases",
+        "url": "https://www.youtube.com/embed/zZ6vybT1HQs",
+        "duration": "18:40",
+        "thumbnail": "images/thumb8.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "PHP Syntax & Functions Guide",
+        "url": "pdfs/pandas.pdf"
+      }
+    ]
+  },
+  "mysql": {
+    "title": "Complete MySQL Tutorial",
+    "description": "Learn relational databases and SQL query syntax. Create tables, query data, use aggregate functions, join tables, define indexes, and manage database security with MySQL.",
+    "thumbnail": "images/thumb9.png",
+    "instructor": "Mrs. P. Jagadeevi",
+    "role": "Database Lab Coordinator",
+    "avatar": "images/pic1.jpg",
+    "totalVideos": 4,
+    "playlist": [
+      {
+        "title": "Introduction to SQL and Relational Model",
+        "url": "https://www.youtube.com/embed/HXV3zeQKqGY",
+        "duration": "12:30",
+        "thumbnail": "images/thumb9.png"
+      },
+      {
+        "title": "DDL vs DML Commands (CREATE, INSERT, UPDATE)",
+        "url": "https://www.youtube.com/embed/HXV3zeQKqGY",
+        "duration": "16:15",
+        "thumbnail": "images/thumb9.png"
+      },
+      {
+        "title": "Retrieving Data with SELECT and WHERE queries",
+        "url": "https://www.youtube.com/embed/HXV3zeQKqGY",
+        "duration": "19:40",
+        "thumbnail": "images/thumb9.png"
+      },
+      {
+        "title": "Table JOINS & Grouping Queries",
+        "url": "https://www.youtube.com/embed/HXV3zeQKqGY",
+        "duration": "23:10",
+        "thumbnail": "images/thumb9.png"
+      }
+    ],
+    "resources": [
+      {
+        "title": "SQL Syntax Quick Reference Card",
+        "url": "pdfs/pandas.pdf"
+      }
+    ]
+  }
+}

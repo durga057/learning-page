@@ -1,0 +1,711 @@
+<html lang="en">
+<head>
+<title>teachers directory</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+<link rel="stylesheet" href="css/style.css">
+<style>
+    .teachers-filter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .filter-buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .filter-btn {
+        padding: 1rem 2rem;
+        background-color: var(--white);
+        border: var(--border);
+        color: var(--black);
+        font-size: 1.6rem;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all 0.2s linear;
+    }
+    .filter-btn.active, .filter-btn:hover {
+        background-color: var(--main-color);
+        color: var(--white);
+    }
+    .search-teacher {
+        display: flex;
+        align-items: center;
+        background-color: var(--white);
+        border: var(--border);
+        border-radius: .5rem;
+        padding: 1rem 1.5rem;
+        width: 30rem;
+    }
+    .search-teacher input {
+        width: 100%;
+        background: none;
+        font-size: 1.6rem;
+        color: var(--black);
+    }
+    .search-teacher i {
+        font-size: 1.8rem;
+        color: var(--light-color);
+        cursor: pointer;
+    }
+    .teacher-details {
+        margin-top: 1rem;
+        border-top: var(--border);
+        padding-top: 1.5rem;
+    }
+    .teacher-details p {
+        font-size: 1.6rem;
+        color: var(--light-color);
+        line-height: 1.5;
+        margin-bottom: .8rem;
+    }
+    .teacher-details p span {
+        color: var(--black);
+        font-weight: 500;
+    }
+</style>
+</head>
+<body>
+    <!--header section starts     ---->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">LEARNING PAGE</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses.." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="images/pic1.jpg" alt="photo">
+                <h3>Durga</h3>
+                <span>student</span>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="side-bar">
+        <div class="close-side-bar">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="profile">
+            <img src="images/pic1.jpg" alt="photo">
+            <h3>Durga</h3>
+            <span>student</span>
+            <a href="profile.html" class="btn">view profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+        </nav>
+    </div>
+
+    <section class="courses">
+        <h1 class="heading">our expert teachers</h1>
+        
+        <div class="teachers-filter">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-dept="all">All Departments</button>
+                <button class="filter-btn" data-dept="CSE">CSE</button>
+                <button class="filter-btn" data-dept="ECE">ECE</button>
+                <button class="filter-btn" data-dept="EEE">EEE</button>
+                <button class="filter-btn" data-dept="MECH">MECH</button>
+                <button class="filter-btn" data-dept="CIVIL">CIVIL</button>
+                <button class="filter-btn" data-dept="AIML">CSE-AIML</button>
+                <button class="filter-btn" data-dept="CSSE">CSSE</button>
+            </div>
+            <div class="search-teacher">
+                <input type="text" id="teacher-search" placeholder="search teachers by name..">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+
+        <div class="box-container" id="teachers-grid">
+            
+            <!-- CSE -->
+            <div class="box teacher-card" data-department="CSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. A. Rama Rao">
+                    <div>
+                        <h3>Dr. A. Rama Rao</h3>
+                        <span>Professor & HOD</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Computer Science & Engineering</span></p>
+                    <p>Email: <span>ramarao.a.cse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. P. Suresh Kumar">
+                    <div>
+                        <h3>Dr. P. Suresh Kumar</h3>
+                        <span>Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Computer Science & Engineering</span></p>
+                    <p>Email: <span>sureshkumar.p.cse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. G. Srinivasa Rao">
+                    <div>
+                        <h3>Dr. G. Srinivasa Rao</h3>
+                        <span>Associate Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Computer Science & Engineering</span></p>
+                    <p>Email: <span>srinivasarao.g.cse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. M. Lakshmi Prasanna">
+                    <div>
+                        <h3>Dr. M. Lakshmi Prasanna</h3>
+                        <span>Associate Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Computer Science & Engineering</span></p>
+                    <p>Email: <span>lakshmiprasanna.m.cse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. K. Jyothi">
+                    <div>
+                        <h3>Mrs. K. Jyothi</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Computer Science & Engineering</span></p>
+                    <p>Email: <span>jyothi.k.cse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. P. Venkatesh">
+                    <div>
+                        <h3>Mr. P. Venkatesh</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Computer Science & Engineering</span></p>
+                    <p>Email: <span>venkatesh.p.cse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <!-- ECE -->
+            <div class="box teacher-card" data-department="ECE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. K. Prasada Rao">
+                    <div>
+                        <h3>Dr. K. Prasada Rao</h3>
+                        <span>Professor & HOD</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Electronics & Communication</span></p>
+                    <p>Email: <span>prasadarao.k.ece@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="ECE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. B. Ravi Kumar">
+                    <div>
+                        <h3>Dr. B. Ravi Kumar</h3>
+                        <span>Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Electronics & Communication</span></p>
+                    <p>Email: <span>ravikumar.b.ece@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="ECE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. P. Deepika">
+                    <div>
+                        <h3>Mrs. P. Deepika</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Electronics & Communication</span></p>
+                    <p>Email: <span>deepika.p.ece@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="ECE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. K. Srinivas">
+                    <div>
+                        <h3>Mr. K. Srinivas</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Electronics & Communication</span></p>
+                    <p>Email: <span>srinivas.k.ece@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="ECE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. T. Sujatha">
+                    <div>
+                        <h3>Mrs. T. Sujatha</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Electronics & Communication</span></p>
+                    <p>Email: <span>sujatha.t.ece@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <!-- EEE -->
+            <div class="box teacher-card" data-department="EEE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. K. Subbaramaiah">
+                    <div>
+                        <h3>Dr. K. Subbaramaiah</h3>
+                        <span>Professor & HOD</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Electrical & Electronics Engineering</span></p>
+                    <p>Email: <span>subbaramaiah.k.eee@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="EEE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. G. Ravi Kumar">
+                    <div>
+                        <h3>Mr. G. Ravi Kumar</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Electrical & Electronics Engineering</span></p>
+                    <p>Email: <span>ravikumar.g.eee@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="EEE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. D. Padma">
+                    <div>
+                        <h3>Mrs. D. Padma</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Electrical & Electronics Engineering</span></p>
+                    <p>Email: <span>padma.d.eee@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="EEE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. K. Ramesh">
+                    <div>
+                        <h3>Mr. K. Ramesh</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Electrical & Electronics Engineering</span></p>
+                    <p>Email: <span>ramesh.k.eee@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="EEE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. B. Lalitha">
+                    <div>
+                        <h3>Mrs. B. Lalitha</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Electrical & Electronics Engineering</span></p>
+                    <p>Email: <span>lalitha.b.eee@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <!-- Mechanical -->
+            <div class="box teacher-card" data-department="MECH">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. V. Satyanarayana">
+                    <div>
+                        <h3>Dr. V. Satyanarayana</h3>
+                        <span>Professor & HOD</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Mechanical Engineering</span></p>
+                    <p>Email: <span>satyanarayana.v.mech@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="MECH">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. P. Siva Kumar">
+                    <div>
+                        <h3>Mr. P. Siva Kumar</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Mechanical Engineering</span></p>
+                    <p>Email: <span>sivakumar.p.mech@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="MECH">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. M. Venkata Rao">
+                    <div>
+                        <h3>Mr. M. Venkata Rao</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Mechanical Engineering</span></p>
+                    <p>Email: <span>venkatarao.m.mech@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="MECH">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. N. Sravani">
+                    <div>
+                        <h3>Mrs. N. Sravani</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Mechanical Engineering</span></p>
+                    <p>Email: <span>sravani.n.mech@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <!-- Civil -->
+            <div class="box teacher-card" data-department="CIVIL">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. B. Srinivasa Rao">
+                    <div>
+                        <h3>Dr. B. Srinivasa Rao</h3>
+                        <span>Professor & HOD</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Civil Engineering</span></p>
+                    <p>Email: <span>srinivasarao.b.civil@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CIVIL">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. P. Srinivas">
+                    <div>
+                        <h3>Mr. P. Srinivas</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Civil Engineering</span></p>
+                    <p>Email: <span>srinivas.p.civil@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CIVIL">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. G. Jyothi">
+                    <div>
+                        <h3>Mrs. G. Jyothi</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Civil Engineering</span></p>
+                    <p>Email: <span>jyothi.g.civil@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CIVIL">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. K. Rajesh">
+                    <div>
+                        <h3>Mr. K. Rajesh</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>Civil Engineering</span></p>
+                    <p>Email: <span>rajesh.k.civil@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <!-- CSE-AIML -->
+            <div class="box teacher-card" data-department="AIML">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. V. Prasad">
+                    <div>
+                        <h3>Dr. V. Prasad</h3>
+                        <span>Professor & HOD</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>CSE (AIML)</span></p>
+                    <p>Email: <span>prasad.v.aiml@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="AIML">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. K. Mahesh">
+                    <div>
+                        <h3>Mr. K. Mahesh</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>CSE (AIML)</span></p>
+                    <p>Email: <span>mahesh.k.aiml@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="AIML">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. S. Lavanya">
+                    <div>
+                        <h3>Mrs. S. Lavanya</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>CSE (AIML)</span></p>
+                    <p>Email: <span>lavanya.s.aiml@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="AIML">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. D. Phani Kumar">
+                    <div>
+                        <h3>Mr. D. Phani Kumar</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>CSE (AIML)</span></p>
+                    <p>Email: <span>phanikumar.d.aiml@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="AIML">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. M. Haritha">
+                    <div>
+                        <h3>Mrs. M. Haritha</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>CSE (AIML)</span></p>
+                    <p>Email: <span>haritha.m.aiml@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <!-- CSSE -->
+            <div class="box teacher-card" data-department="CSSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Dr. R. Rajender">
+                    <div>
+                        <h3>Dr. R. Rajender</h3>
+                        <span>Professor & HOD</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>CSSE</span></p>
+                    <p>Email: <span>rajender.r.csse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CSSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. A. Prakash">
+                    <div>
+                        <h3>Mr. A. Prakash</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>CSSE</span></p>
+                    <p>Email: <span>prakash.a.csse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CSSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. T. Bhavani">
+                    <div>
+                        <h3>Mrs. T. Bhavani</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>CSSE</span></p>
+                    <p>Email: <span>bhavani.t.csse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CSSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mr. P. Harish">
+                    <div>
+                        <h3>Mr. P. Harish</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>CSSE</span></p>
+                    <p>Email: <span>harish.p.csse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+            <div class="box teacher-card" data-department="CSSE">
+                <div class="tutor">
+                    <img src="images/pic1.jpg" alt="Mrs. S. Madhavi">
+                    <div>
+                        <h3>Mrs. S. Madhavi</h3>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="teacher-details">
+                    <p>Department: <span>CSSE</span></p>
+                    <p>Email: <span>madhavi.s.csse@Learning Hub.org</span></p>
+                </div>
+                <a href="contact.html" class="inline-btn">get in touch</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--footer  section starts     ---->
+    <footer class="footer">
+        &copy; copyright @2025 by <span>Durga</span>
+    </footer>
+    
+    <!-- custom js link     ---->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const teacherCards = document.querySelectorAll('.teacher-card');
+            const searchInput = document.getElementById('teacher-search');
+
+            let activeDept = 'all';
+            let searchQuery = '';
+
+            function filterTeachers() {
+                teacherCards.forEach(card => {
+                    const dept = card.getAttribute('data-department');
+                    const name = card.querySelector('.tutor h3').textContent.toLowerCase();
+                    
+                    const matchesDept = (activeDept === 'all' || dept === activeDept);
+                    const matchesSearch = name.includes(searchQuery);
+
+                    if (matchesDept && matchesSearch) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Handle department filter clicks
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeDept = btn.getAttribute('data-dept');
+                    filterTeachers();
+                });
+            });
+
+            // Handle text search input
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value.toLowerCase().trim();
+                filterTeachers();
+            });
+        });
+    </script>
+</body>
+</html>

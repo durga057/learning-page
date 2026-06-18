@@ -1,0 +1,587 @@
+{
+  "CSE": {
+    "title": "Computer Science & Engineering",
+    "semesters": {
+      "1-1": {
+        "title": "1st Year - Semester 1",
+        "subjects": [
+          { "name": "Engineering Mathematics I", "notes": "pdfs/maths1.pdf", "syllabus": "pdfs/maths1.pdf", "papers": "pdfs/maths1.pdf" },
+          { "name": "Applied Physics", "notes": "pdfs/physics.pdf", "syllabus": "pdfs/physics.pdf", "papers": "pdfs/physics.pdf" },
+          { "name": "C Programming", "notes": "pdfs/c.pdf", "syllabus": "pdfs/c.pdf", "papers": "pdfs/c.pdf" },
+          { "name": "Data Structures", "notes": "pdfs/ds.pdf", "syllabus": "pdfs/ds.pdf", "papers": "pdfs/ds.pdf" }
+        ]
+      },
+      "1-2": {
+        "title": "1st Year - Semester 2",
+        "subjects": [
+          { "name": "Engineering Mathematics II", "notes": "pdfs/maths2.pdf", "syllabus": "pdfs/maths2.pdf", "papers": "pdfs/maths2.pdf" },
+          { "name": "DBMS", "notes": "pdfs/dbms.pdf", "syllabus": "pdfs/dbms.pdf", "papers": "pdfs/dbms.pdf" },
+          { "name": "Operating Systems", "notes": "pdfs/os.pdf", "syllabus": "pdfs/os.pdf", "papers": "pdfs/os.pdf" },
+          { "name": "Computer Networks", "notes": "pdfs/cn.pdf", "syllabus": "pdfs/cn.pdf", "papers": "pdfs/cn.pdf" }
+        ]
+      },
+      "2-1": {
+        "title": "2nd Year - Semester 1",
+        "subjects": [
+          { "name": "Java Programming", "notes": "pdfs/java.pdf", "syllabus": "pdfs/java.pdf", "papers": "pdfs/java.pdf" },
+          { "name": "Software Engineering", "notes": "pdfs/se.pdf", "syllabus": "pdfs/se.pdf", "papers": "pdfs/se.pdf" },
+          { "name": "Machine Learning", "notes": "pdfs/ml.pdf", "syllabus": "pdfs/ml.pdf", "papers": "pdfs/ml.pdf" },
+          { "name": "Artificial Intelligence", "notes": "pdfs/ai.pdf", "syllabus": "pdfs/ai.pdf", "papers": "pdfs/ai.pdf" }
+        ]
+      },
+      "2-2": { "title": "2nd Year - Semester 2", "subjects": [
+          { "name": "Design & Analysis of Algorithms", "notes": "pdfs/daa.pdf", "syllabus": "pdfs/daa.pdf", "papers": "pdfs/daa.pdf" },
+          { "name": "Formal Languages & Automata", "notes": "pdfs/flat.pdf", "syllabus": "pdfs/flat.pdf", "papers": "pdfs/flat.pdf" }
+      ] },
+      "3-1": { "title": "3rd Year - Semester 1", "subjects": [
+          { "name": "Compiler Design", "notes": "pdfs/cd.pdf", "syllabus": "pdfs/cd.pdf", "papers": "pdfs/cd.pdf" },
+          { "name": "Data Mining", "notes": "pdfs/dm.pdf", "syllabus": "pdfs/dm.pdf", "papers": "pdfs/dm.pdf" }
+      ] },
+      "3-2": { "title": "3rd Year - Semester 2", "subjects": [
+          { "name": "Web Technologies", "notes": "pdfs/wt.pdf", "syllabus": "pdfs/wt.pdf", "papers": "pdfs/wt.pdf" },
+          { "name": "Distributed Systems", "notes": "pdfs/ds.pdf", "syllabus": "pdfs/ds.pdf", "papers": "pdfs/ds.pdf" }
+      ] },
+      "4-1": { "title": "4th Year - Semester 1", "subjects": [
+          { "name": "Cloud Computing", "notes": "pdfs/cc.pdf", "syllabus": "pdfs/cc.pdf", "papers": "pdfs/cc.pdf" },
+          { "name": "Cyber Security", "notes": "pdfs/cyber.pdf", "syllabus": "pdfs/cyber.pdf", "papers": "pdfs/cyber.pdf" }
+      ] },
+      "4-2": { "title": "4th Year - Semester 2", "subjects": [
+          { "name": "Project Work", "notes": "pdfs/project.pdf", "syllabus": "pdfs/project.pdf", "papers": "pdfs/project.pdf" },
+          { "name": "Seminar", "notes": "pdfs/seminar.pdf", "syllabus": "pdfs/seminar.pdf", "papers": "pdfs/seminar.pdf" }
+      ] },
+      "5-1": { "title": "Additional Skill Courses", "subjects": [
+          { "name": "Full Stack Dev", "notes": "pdfs/fsd.pdf", "syllabus": "pdfs/fsd.pdf", "papers": "pdfs/fsd.pdf" }
+      ] }
+    }
+  },
+  "ECE": {
+    "title": "Electronics & Communication Engineering",
+    "semesters": {
+      "1-1": {
+        "title": "1st Year - Semester 1",
+        "subjects": [
+          { "name": "Mathematics-I", "notes": "pdfs/m1.pdf", "syllabus": "pdfs/m1.pdf", "papers": "pdfs/m1.pdf" },
+          { "name": "Physics", "notes": "pdfs/phy.pdf", "syllabus": "pdfs/phy.pdf", "papers": "pdfs/phy.pdf" },
+          { "name": "Chemistry", "notes": "pdfs/che.pdf", "syllabus": "pdfs/che.pdf", "papers": "pdfs/che.pdf" }
+        ]
+      },
+      "1-2": {
+        "title": "1st Year - Semester 2",
+        "subjects": [
+          { "name": "Mathematics-II", "notes": "pdfs/m2.pdf", "syllabus": "pdfs/m2.pdf", "papers": "pdfs/m2.pdf" },
+          { "name": "PPS", "notes": "pdfs/pps.pdf", "syllabus": "pdfs/pps.pdf", "papers": "pdfs/pps.pdf" },
+          { "name": "Engineering Graphics", "notes": "pdfs/eg.pdf", "syllabus": "pdfs/eg.pdf", "papers": "pdfs/eg.pdf" }
+        ]
+      },
+      "2-1": {
+        "title": "2nd Year - Semester 1",
+        "subjects": [
+          { "name": "Network Analysis", "notes": "pdfs/na.pdf", "syllabus": "pdfs/na.pdf", "papers": "pdfs/na.pdf" },
+          { "name": "Electronic Devices", "notes": "pdfs/ed.pdf", "syllabus": "pdfs/ed.pdf", "papers": "pdfs/ed.pdf" },
+          { "name": "Signals and Systems", "notes": "pdfs/ss.pdf", "syllabus": "pdfs/ss.pdf", "papers": "pdfs/ss.pdf" },
+          { "name": "Analog Circuits", "notes": "pdfs/ac.pdf", "syllabus": "pdfs/ac.pdf", "papers": "pdfs/ac.pdf" },
+          { "name": "Digital Electronics", "notes": "pdfs/de.pdf", "syllabus": "pdfs/de.pdf", "papers": "pdfs/de.pdf" }
+        ]
+      },
+      "2-2": {
+        "title": "2nd Year - Semester 2",
+        "subjects": [
+          { "name": "Control Systems", "notes": "pdfs/cs.pdf", "syllabus": "pdfs/cs.pdf", "papers": "pdfs/cs.pdf" },
+          { "name": "Microprocessors", "notes": "pdfs/mp.pdf", "syllabus": "pdfs/mp.pdf", "papers": "pdfs/mp.pdf" },
+          { "name": "Linear IC Applications", "notes": "pdfs/lica.pdf", "syllabus": "pdfs/lica.pdf", "papers": "pdfs/lica.pdf" },
+          { "name": "Electromagnetic Theory", "notes": "pdfs/emt.pdf", "syllabus": "pdfs/emt.pdf", "papers": "pdfs/emt.pdf" },
+          { "name": "Probability Theory", "notes": "pdfs/pt.pdf", "syllabus": "pdfs/pt.pdf", "papers": "pdfs/pt.pdf" }
+        ]
+      },
+      "3-1": {
+        "title": "3rd Year - Semester 1",
+        "subjects": [
+          { "name": "Communication Systems", "notes": "pdfs/comm.pdf", "syllabus": "pdfs/comm.pdf", "papers": "pdfs/comm.pdf" },
+          { "name": "Digital Signal Processing", "notes": "pdfs/dsp.pdf", "syllabus": "pdfs/dsp.pdf", "papers": "pdfs/dsp.pdf" },
+          { "name": "VLSI Design", "notes": "pdfs/vlsi.pdf", "syllabus": "pdfs/vlsi.pdf", "papers": "pdfs/vlsi.pdf" },
+          { "name": "Embedded Systems", "notes": "pdfs/es.pdf", "syllabus": "pdfs/es.pdf", "papers": "pdfs/es.pdf" },
+          { "name": "Microwave Engineering", "notes": "pdfs/mwe.pdf", "syllabus": "pdfs/mwe.pdf", "papers": "pdfs/mwe.pdf" }
+        ]
+      },
+      "3-2": {
+        "title": "3rd Year - Semester 2",
+        "subjects": [
+          { "name": "Wireless Communications", "notes": "pdfs/wc.pdf", "syllabus": "pdfs/wc.pdf", "papers": "pdfs/wc.pdf" },
+          { "name": "Optical Communications", "notes": "pdfs/oc.pdf", "syllabus": "pdfs/oc.pdf", "papers": "pdfs/oc.pdf" },
+          { "name": "IoT", "notes": "pdfs/iot.pdf", "syllabus": "pdfs/iot.pdf", "papers": "pdfs/iot.pdf" },
+          { "name": "Radar Systems", "notes": "pdfs/radar.pdf", "syllabus": "pdfs/radar.pdf", "papers": "pdfs/radar.pdf" },
+          { "name": "Antenna Theory", "notes": "pdfs/at.pdf", "syllabus": "pdfs/at.pdf", "papers": "pdfs/at.pdf" }
+        ]
+      },
+      "4-1": {
+        "title": "4th Year - Semester 1",
+        "subjects": [
+          { "name": "Satellite Communications", "notes": "pdfs/sat.pdf", "syllabus": "pdfs/sat.pdf", "papers": "pdfs/sat.pdf" },
+          { "name": "Mobile Communications", "notes": "pdfs/mc.pdf", "syllabus": "pdfs/mc.pdf", "papers": "pdfs/mc.pdf" },
+          { "name": "Project Work-I", "notes": "pdfs/p1.pdf", "syllabus": "pdfs/p1.pdf", "papers": "pdfs/p1.pdf" }
+        ]
+      },
+      "4-2": {
+        "title": "4th Year - Semester 2",
+        "subjects": [
+          { "name": "Project Work-II", "notes": "pdfs/p2.pdf", "syllabus": "pdfs/p2.pdf", "papers": "pdfs/p2.pdf" },
+          { "name": "Internship", "notes": "pdfs/int.pdf", "syllabus": "pdfs/int.pdf", "papers": "pdfs/int.pdf" },
+          { "name": "Seminar", "notes": "pdfs/sem.pdf", "syllabus": "pdfs/sem.pdf", "papers": "pdfs/sem.pdf" }
+        ]
+      },
+      "5-1": { "title": "Skill Courses", "subjects": [] }
+    }
+  },
+  "EEE": {
+    "title": "Electrical & Electronics Engineering",
+    "semesters": {
+      "1-1": {
+        "title": "1st Year - Semester 1",
+        "subjects": [
+          { "name": "Electrical Machines-I", "notes": "pdfs/em1.pdf", "syllabus": "pdfs/em1.pdf", "papers": "pdfs/em1.pdf" },
+          { "name": "Network Theory", "notes": "pdfs/nt.pdf", "syllabus": "pdfs/nt.pdf", "papers": "pdfs/nt.pdf" }
+        ]
+      },
+      "1-2": {
+        "title": "1st Year - Semester 2",
+        "subjects": [
+          { "name": "Electromagnetic Fields", "notes": "pdfs/emf.pdf", "syllabus": "pdfs/emf.pdf", "papers": "pdfs/emf.pdf" },
+          { "name": "Electronic Devices", "notes": "pdfs/ed.pdf", "syllabus": "pdfs/ed.pdf", "papers": "pdfs/ed.pdf" }
+        ]
+      },
+      "2-1": {
+        "title": "2nd Year - Semester 1",
+        "subjects": [
+          { "name": "Electrical Machines-II", "notes": "pdfs/em2.pdf", "syllabus": "pdfs/em2.pdf", "papers": "pdfs/em2.pdf" },
+          { "name": "Power Systems-I", "notes": "pdfs/ps1.pdf", "syllabus": "pdfs/ps1.pdf", "papers": "pdfs/ps1.pdf" }
+        ]
+      },
+      "2-2": {
+        "title": "2nd Year - Semester 2",
+        "subjects": [
+          { "name": "Control Systems", "notes": "pdfs/cs.pdf", "syllabus": "pdfs/cs.pdf", "papers": "pdfs/cs.pdf" },
+          { "name": "Measurements", "notes": "pdfs/ms.pdf", "syllabus": "pdfs/ms.pdf", "papers": "pdfs/ms.pdf" }
+        ]
+      },
+      "3-1": {
+        "title": "3rd Year - Semester 1",
+        "subjects": [
+          { "name": "Power Electronics", "notes": "pdfs/pe.pdf", "syllabus": "pdfs/pe.pdf", "papers": "pdfs/pe.pdf" },
+          { "name": "Power System Analysis", "notes": "pdfs/psa.pdf", "syllabus": "pdfs/psa.pdf", "papers": "pdfs/psa.pdf" },
+          { "name": "Utilization of Electrical Energy", "notes": "pdfs/uee.pdf", "syllabus": "pdfs/uee.pdf", "papers": "pdfs/uee.pdf" },
+          { "name": "Microprocessors", "notes": "pdfs/mp.pdf", "syllabus": "pdfs/mp.pdf", "papers": "pdfs/mp.pdf" }
+        ]
+      },
+      "3-2": {
+        "title": "3rd Year - Semester 2",
+        "subjects": [
+          { "name": "High Voltage Engineering", "notes": "pdfs/hve.pdf", "syllabus": "pdfs/hve.pdf", "papers": "pdfs/hve.pdf" },
+          { "name": "Renewable Energy Systems", "notes": "pdfs/res.pdf", "syllabus": "pdfs/res.pdf", "papers": "pdfs/res.pdf" },
+          { "name": "Electrical Drives", "notes": "pdfs/ed.pdf", "syllabus": "pdfs/ed.pdf", "papers": "pdfs/ed.pdf" },
+          { "name": "Smart Grid Technology", "notes": "pdfs/sg.pdf", "syllabus": "pdfs/sg.pdf", "papers": "pdfs/sg.pdf" }
+        ]
+      },
+      "4-1": {
+        "title": "4th Year - Semester 1",
+        "subjects": [
+          { "name": "Electric Vehicles", "notes": "pdfs/ev.pdf", "syllabus": "pdfs/ev.pdf", "papers": "pdfs/ev.pdf" },
+          { "name": "FACTS Controllers", "notes": "pdfs/facts.pdf", "syllabus": "pdfs/facts.pdf", "papers": "pdfs/facts.pdf" },
+          { "name": "Project Work-I", "notes": "pdfs/p1.pdf", "syllabus": "pdfs/p1.pdf", "papers": "pdfs/p1.pdf" }
+        ]
+      },
+      "4-2": {
+        "title": "4th Year - Semester 2",
+        "subjects": [
+          { "name": "Project Work-II", "notes": "pdfs/p2.pdf", "syllabus": "pdfs/p2.pdf", "papers": "pdfs/p2.pdf" },
+          { "name": "Internship", "notes": "pdfs/int.pdf", "syllabus": "pdfs/int.pdf", "papers": "pdfs/int.pdf" },
+          { "name": "Seminar", "notes": "pdfs/sem.pdf", "syllabus": "pdfs/sem.pdf", "papers": "pdfs/sem.pdf" }
+        ]
+      },
+      "5-1": { "title": "Skill Courses", "subjects": [] }
+    }
+  },
+  "MECH": {
+    "title": "Mechanical Engineering",
+    "semesters": {
+      "1-1": {
+        "title": "1st Year - Semester 1",
+        "subjects": [
+          { "name": "Engineering Mathematics-I", "notes": "pdfs/m1.pdf", "syllabus": "pdfs/m1.pdf", "papers": "pdfs/m1.pdf" },
+          { "name": "Engineering Physics", "notes": "pdfs/phy.pdf", "syllabus": "pdfs/phy.pdf", "papers": "pdfs/phy.pdf" },
+          { "name": "Engineering Chemistry", "notes": "pdfs/che.pdf", "syllabus": "pdfs/che.pdf", "papers": "pdfs/che.pdf" },
+          { "name": "Programming for Problem Solving", "notes": "pdfs/pps.pdf", "syllabus": "pdfs/pps.pdf", "papers": "pdfs/pps.pdf" },
+          { "name": "Engineering Graphics", "notes": "pdfs/eg.pdf", "syllabus": "pdfs/eg.pdf", "papers": "pdfs/eg.pdf" },
+          { "name": "Basic Electrical Engineering", "notes": "pdfs/bee.pdf", "syllabus": "pdfs/bee.pdf", "papers": "pdfs/bee.pdf" }
+        ]
+      },
+      "1-2": {
+        "title": "1st Year - Semester 2",
+        "subjects": [
+          { "name": "Mathematics-II", "notes": "pdfs/m2.pdf", "syllabus": "pdfs/m2.pdf", "papers": "pdfs/m2.pdf" },
+          { "name": "Engineering Mechanics", "notes": "pdfs/em.pdf", "syllabus": "pdfs/em.pdf", "papers": "pdfs/em.pdf" },
+          { "name": "Manufacturing Processes", "notes": "pdfs/mproc.pdf", "syllabus": "pdfs/mproc.pdf", "papers": "pdfs/mproc.pdf" },
+          { "name": "Material Science", "notes": "pdfs/msci.pdf", "syllabus": "pdfs/msci.pdf", "papers": "pdfs/msci.pdf" },
+          { "name": "Environmental Science", "notes": "pdfs/env.pdf", "syllabus": "pdfs/env.pdf", "papers": "pdfs/env.pdf" },
+          { "name": "Workshop Practice", "notes": "pdfs/wp.pdf", "syllabus": "pdfs/wp.pdf", "papers": "pdfs/wp.pdf" }
+        ]
+      },
+      "2-1": {
+        "title": "2nd Year - Semester 1",
+        "subjects": [
+          { "name": "Thermodynamics", "notes": "pdfs/td.pdf", "syllabus": "pdfs/td.pdf", "papers": "pdfs/td.pdf" },
+          { "name": "Strength of Materials", "notes": "pdfs/som.pdf", "syllabus": "pdfs/som.pdf", "papers": "pdfs/som.pdf" },
+          { "name": "Fluid Mechanics", "notes": "pdfs/fm.pdf", "syllabus": "pdfs/fm.pdf", "papers": "pdfs/fm.pdf" },
+          { "name": "Machine Drawing", "notes": "pdfs/md.pdf", "syllabus": "pdfs/md.pdf", "papers": "pdfs/md.pdf" },
+          { "name": "Metallurgy", "notes": "pdfs/met.pdf", "syllabus": "pdfs/met.pdf", "papers": "pdfs/met.pdf" },
+          { "name": "Kinematics of Machinery", "notes": "pdfs/kom.pdf", "syllabus": "pdfs/kom.pdf", "papers": "pdfs/kom.pdf" }
+        ]
+      },
+      "2-2": {
+        "title": "2nd Year - Semester 2",
+        "subjects": [
+          { "name": "Dynamics of Machinery", "notes": "pdfs/dom.pdf", "syllabus": "pdfs/dom.pdf", "papers": "pdfs/dom.pdf" },
+          { "name": "Heat Transfer", "notes": "pdfs/ht.pdf", "syllabus": "pdfs/ht.pdf", "papers": "pdfs/ht.pdf" },
+          { "name": "Manufacturing Technology", "notes": "pdfs/mt.pdf", "syllabus": "pdfs/mt.pdf", "papers": "pdfs/mt.pdf" },
+          { "name": "Design of Machine Elements", "notes": "pdfs/dme.pdf", "syllabus": "pdfs/dme.pdf", "papers": "pdfs/dme.pdf" },
+          { "name": "Hydraulic Machines", "notes": "pdfs/hm.pdf", "syllabus": "pdfs/hm.pdf", "papers": "pdfs/hm.pdf" },
+          { "name": "Industrial Engineering", "notes": "pdfs/ie.pdf", "syllabus": "pdfs/ie.pdf", "papers": "pdfs/ie.pdf" }
+        ]
+      },
+      "3-1": {
+        "title": "3rd Year - Semester 1",
+        "subjects": [
+          { "name": "CAD/CAM", "notes": "pdfs/cadcam.pdf", "syllabus": "pdfs/cadcam.pdf", "papers": "pdfs/cadcam.pdf" },
+          { "name": "Finite Element Analysis", "notes": "pdfs/fea.pdf", "syllabus": "pdfs/fea.pdf", "papers": "pdfs/fea.pdf" },
+          { "name": "Refrigeration and Air Conditioning", "notes": "pdfs/rac.pdf", "syllabus": "pdfs/rac.pdf", "papers": "pdfs/rac.pdf" },
+          { "name": "Automobile Engineering", "notes": "pdfs/ae.pdf", "syllabus": "pdfs/ae.pdf", "papers": "pdfs/ae.pdf" },
+          { "name": "Mechatronics", "notes": "pdfs/mech.pdf", "syllabus": "pdfs/mech.pdf", "papers": "pdfs/mech.pdf" },
+          { "name": "Metrology", "notes": "pdfs/metro.pdf", "syllabus": "pdfs/metro.pdf", "papers": "pdfs/metro.pdf" }
+        ]
+      },
+      "3-2": {
+        "title": "3rd Year - Semester 2",
+        "subjects": [
+          { "name": "Robotics", "notes": "pdfs/rob.pdf", "syllabus": "pdfs/rob.pdf", "papers": "pdfs/rob.pdf" },
+          { "name": "Power Plant Engineering", "notes": "pdfs/ppe.pdf", "syllabus": "pdfs/ppe.pdf", "papers": "pdfs/ppe.pdf" },
+          { "name": "Operations Research", "notes": "pdfs/or.pdf", "syllabus": "pdfs/or.pdf", "papers": "pdfs/or.pdf" },
+          { "name": "Composite Materials", "notes": "pdfs/cm.pdf", "syllabus": "pdfs/cm.pdf", "papers": "pdfs/cm.pdf" },
+          { "name": "CNC Technology", "notes": "pdfs/cnc.pdf", "syllabus": "pdfs/cnc.pdf", "papers": "pdfs/cnc.pdf" },
+          { "name": "Instrumentation", "notes": "pdfs/inst.pdf", "syllabus": "pdfs/inst.pdf", "papers": "pdfs/inst.pdf" }
+        ]
+      },
+      "4-1": {
+        "title": "4th Year - Semester 1",
+        "subjects": [
+          { "name": "Advanced Manufacturing Systems", "notes": "pdfs/ams.pdf", "syllabus": "pdfs/ams.pdf", "papers": "pdfs/ams.pdf" },
+          { "name": "Industrial Management", "notes": "pdfs/im.pdf", "syllabus": "pdfs/im.pdf", "papers": "pdfs/im.pdf" },
+          { "name": "Renewable Energy Systems", "notes": "pdfs/res.pdf", "syllabus": "pdfs/res.pdf", "papers": "pdfs/res.pdf" },
+          { "name": "Quality Control", "notes": "pdfs/qc.pdf", "syllabus": "pdfs/qc.pdf", "papers": "pdfs/qc.pdf" },
+          { "name": "Project Work-I", "notes": "pdfs/p1.pdf", "syllabus": "pdfs/p1.pdf", "papers": "pdfs/p1.pdf" }
+        ]
+      },
+      "4-2": {
+        "title": "4th Year - Semester 2",
+        "subjects": [
+          { "name": "Project Work-II", "notes": "pdfs/p2.pdf", "syllabus": "pdfs/p2.pdf", "papers": "pdfs/p2.pdf" },
+          { "name": "Internship", "notes": "pdfs/int.pdf", "syllabus": "pdfs/int.pdf", "papers": "pdfs/int.pdf" },
+          { "name": "Seminar", "notes": "pdfs/sem.pdf", "syllabus": "pdfs/sem.pdf", "papers": "pdfs/sem.pdf" },
+          { "name": "Entrepreneurship", "notes": "pdfs/ent.pdf", "syllabus": "pdfs/ent.pdf", "papers": "pdfs/ent.pdf" }
+        ]
+      },
+      "5-1": { "title": "Skill Courses", "subjects": [] }
+    }
+  },
+  "CIVIL": {
+    "title": "Civil Engineering",
+    "semesters": {
+      "1-1": {
+        "title": "1st Year - Semester 1",
+        "subjects": [
+          { "name": "Surveying", "notes": "pdfs/sur.pdf", "syllabus": "pdfs/sur.pdf", "papers": "pdfs/sur.pdf" },
+          { "name": "Strength of Materials", "notes": "pdfs/som.pdf", "syllabus": "pdfs/som.pdf", "papers": "pdfs/som.pdf" }
+        ]
+      },
+      "1-2": {
+        "title": "1st Year - Semester 2",
+        "subjects": [
+          { "name": "Building Materials", "notes": "pdfs/bm.pdf", "syllabus": "pdfs/bm.pdf", "papers": "pdfs/bm.pdf" },
+          { "name": "Fluid Mechanics", "notes": "pdfs/fm.pdf", "syllabus": "pdfs/fm.pdf", "papers": "pdfs/fm.pdf" }
+        ]
+      },
+      "2-1": {
+        "title": "2nd Year - Semester 1",
+        "subjects": [
+          { "name": "Structural Analysis", "notes": "pdfs/sa.pdf", "syllabus": "pdfs/sa.pdf", "papers": "pdfs/sa.pdf" },
+          { "name": "Concrete Technology", "notes": "pdfs/ct.pdf", "syllabus": "pdfs/ct.pdf", "papers": "pdfs/ct.pdf" }
+        ]
+      },
+      "2-2": {
+        "title": "2nd Year - Semester 2",
+        "subjects": [
+          { "name": "Geotechnical Engineering", "notes": "pdfs/ge.pdf", "syllabus": "pdfs/ge.pdf", "papers": "pdfs/ge.pdf" },
+          { "name": "Hydrology", "notes": "pdfs/hy.pdf", "syllabus": "pdfs/hy.pdf", "papers": "pdfs/hy.pdf" }
+        ]
+      },
+      "3-1": {
+        "title": "3rd Year - Semester 1",
+        "subjects": [
+          { "name": "Design of RCC Structures", "notes": "pdfs/rcc.pdf", "syllabus": "pdfs/rcc.pdf", "papers": "pdfs/rcc.pdf" },
+          { "name": "Transportation Engineering", "notes": "pdfs/te.pdf", "syllabus": "pdfs/te.pdf", "papers": "pdfs/te.pdf" },
+          { "name": "Environmental Engineering", "notes": "pdfs/ee.pdf", "syllabus": "pdfs/ee.pdf", "papers": "pdfs/ee.pdf" },
+          { "name": "Water Resources Engineering", "notes": "pdfs/wre.pdf", "syllabus": "pdfs/wre.pdf", "papers": "pdfs/wre.pdf" }
+        ]
+      },
+      "3-2": {
+        "title": "3rd Year - Semester 2",
+        "subjects": [
+          { "name": "Steel Structures", "notes": "pdfs/ss.pdf", "syllabus": "pdfs/ss.pdf", "papers": "pdfs/ss.pdf" },
+          { "name": "Foundation Engineering", "notes": "pdfs/fe.pdf", "syllabus": "pdfs/fe.pdf", "papers": "pdfs/fe.pdf" },
+          { "name": "Construction Management", "notes": "pdfs/cm.pdf", "syllabus": "pdfs/cm.pdf", "papers": "pdfs/cm.pdf" },
+          { "name": "Estimation and Costing", "notes": "pdfs/ec.pdf", "syllabus": "pdfs/ec.pdf", "papers": "pdfs/ec.pdf" }
+        ]
+      },
+      "4-1": {
+        "title": "4th Year - Semester 1",
+        "subjects": [
+          { "name": "Advanced Structural Engineering", "notes": "pdfs/ase.pdf", "syllabus": "pdfs/ase.pdf", "papers": "pdfs/ase.pdf" },
+          { "name": "Finite Element Methods", "notes": "pdfs/fem.pdf", "syllabus": "pdfs/fem.pdf", "papers": "pdfs/fem.pdf" },
+          { "name": "Project Work-I", "notes": "pdfs/p1.pdf", "syllabus": "pdfs/p1.pdf", "papers": "pdfs/p1.pdf" }
+        ]
+      },
+      "4-2": {
+        "title": "4th Year - Semester 2",
+        "subjects": [
+          { "name": "Project Work-II", "notes": "pdfs/p2.pdf", "syllabus": "pdfs/p2.pdf", "papers": "pdfs/p2.pdf" },
+          { "name": "Internship", "notes": "pdfs/int.pdf", "syllabus": "pdfs/int.pdf", "papers": "pdfs/int.pdf" },
+          { "name": "Seminar", "notes": "pdfs/sem.pdf", "syllabus": "pdfs/sem.pdf", "papers": "pdfs/sem.pdf" }
+        ]
+      },
+      "5-1": { "title": "Skill Courses", "subjects": [] }
+    }
+  },
+  "AIML": {
+    "title": "CSE (Artificial Intelligence & Machine Learning)",
+    "semesters": {
+      "1-1": {
+        "title": "1st Year - Semester 1",
+        "subjects": [
+          { "name": "Data Structures", "notes": "pdfs/ds.pdf", "syllabus": "pdfs/ds.pdf", "papers": "pdfs/ds.pdf" },
+          { "name": "Python Programming", "notes": "pdfs/python.pdf", "syllabus": "pdfs/python.pdf", "papers": "pdfs/python.pdf" }
+        ]
+      },
+      "1-2": {
+        "title": "1st Year - Semester 2",
+        "subjects": [
+          { "name": "Discrete Mathematics", "notes": "pdfs/dm.pdf", "syllabus": "pdfs/dm.pdf", "papers": "pdfs/dm.pdf" },
+          { "name": "DBMS", "notes": "pdfs/dbms.pdf", "syllabus": "pdfs/dbms.pdf", "papers": "pdfs/dbms.pdf" },
+          { "name": "Computer Organization", "notes": "pdfs/co.pdf", "syllabus": "pdfs/co.pdf", "papers": "pdfs/co.pdf" }
+        ]
+      },
+      "2-1": {
+        "title": "2nd Year - Semester 1",
+        "subjects": [
+          { "name": "Operating Systems", "notes": "pdfs/os.pdf", "syllabus": "pdfs/os.pdf", "papers": "pdfs/os.pdf" },
+          { "name": "Java Programming", "notes": "pdfs/java.pdf", "syllabus": "pdfs/java.pdf", "papers": "pdfs/java.pdf" },
+          { "name": "Computer Networks", "notes": "pdfs/cn.pdf", "syllabus": "pdfs/cn.pdf", "papers": "pdfs/cn.pdf" }
+        ]
+      },
+      "2-2": {
+        "title": "2nd Year - Semester 2",
+        "subjects": [
+          { "name": "Software Engineering", "notes": "pdfs/se.pdf", "syllabus": "pdfs/se.pdf", "papers": "pdfs/se.pdf" },
+          { "name": "Probability and Statistics", "notes": "pdfs/ps.pdf", "syllabus": "pdfs/ps.pdf", "papers": "pdfs/ps.pdf" }
+        ]
+      },
+      "3-1": {
+        "title": "3rd Year - Semester 1",
+        "subjects": [
+          { "name": "Machine Learning", "notes": "pdfs/ml.pdf", "syllabus": "pdfs/ml.pdf", "papers": "pdfs/ml.pdf" },
+          { "name": "Artificial Intelligence", "notes": "pdfs/ai.pdf", "syllabus": "pdfs/ai.pdf", "papers": "pdfs/ai.pdf" },
+          { "name": "Data Science", "notes": "pdfs/ds.pdf", "syllabus": "pdfs/ds.pdf", "papers": "pdfs/ds.pdf" },
+          { "name": "Deep Learning", "notes": "pdfs/dl.pdf", "syllabus": "pdfs/dl.pdf", "papers": "pdfs/dl.pdf" },
+          { "name": "Cloud Computing", "notes": "pdfs/cc.pdf", "syllabus": "pdfs/cc.pdf", "papers": "pdfs/cc.pdf" }
+        ]
+      },
+      "3-2": {
+        "title": "3rd Year - Semester 2",
+        "subjects": [
+          { "name": "Computer Vision", "notes": "pdfs/cv.pdf", "syllabus": "pdfs/cv.pdf", "papers": "pdfs/cv.pdf" },
+          { "name": "Natural Language Processing", "notes": "pdfs/nlp.pdf", "syllabus": "pdfs/nlp.pdf", "papers": "pdfs/nlp.pdf" },
+          { "name": "Big Data Analytics", "notes": "pdfs/bda.pdf", "syllabus": "pdfs/bda.pdf", "papers": "pdfs/bda.pdf" },
+          { "name": "IoT", "notes": "pdfs/iot.pdf", "syllabus": "pdfs/iot.pdf", "papers": "pdfs/iot.pdf" },
+          { "name": "Cyber Security", "notes": "pdfs/cyber.pdf", "syllabus": "pdfs/cyber.pdf", "papers": "pdfs/cyber.pdf" }
+        ]
+      },
+      "4-1": {
+        "title": "4th Year - Semester 1",
+        "subjects": [
+          { "name": "Generative AI", "notes": "pdfs/genai.pdf", "syllabus": "pdfs/genai.pdf", "papers": "pdfs/genai.pdf" },
+          { "name": "Reinforcement Learning", "notes": "pdfs/rl.pdf", "syllabus": "pdfs/rl.pdf", "papers": "pdfs/rl.pdf" },
+          { "name": "Project Work-I", "notes": "pdfs/p1.pdf", "syllabus": "pdfs/p1.pdf", "papers": "pdfs/p1.pdf" }
+        ]
+      },
+      "4-2": {
+        "title": "4th Year - Semester 2",
+        "subjects": [
+          { "name": "Project Work-II", "notes": "pdfs/p2.pdf", "syllabus": "pdfs/p2.pdf", "papers": "pdfs/p2.pdf" },
+          { "name": "Internship", "notes": "pdfs/int.pdf", "syllabus": "pdfs/int.pdf", "papers": "pdfs/int.pdf" },
+          { "name": "Seminar", "notes": "pdfs/sem.pdf", "syllabus": "pdfs/sem.pdf", "papers": "pdfs/sem.pdf" }
+        ]
+      },
+      "5-1": { "title": "Skill Courses", "subjects": [] }
+    }
+  },
+  "CSIT": {
+    "title": "Computer Science & Information Technology",
+    "semesters": {
+      "1-1": {
+        "title": "1st Year - Semester 1",
+        "subjects": [
+          { "name": "Engineering Mathematics-I", "notes": "pdfs/m1.pdf", "syllabus": "pdfs/m1.pdf", "papers": "pdfs/m1.pdf" },
+          { "name": "Applied Physics", "notes": "pdfs/phy.pdf", "syllabus": "pdfs/phy.pdf", "papers": "pdfs/phy.pdf" },
+          { "name": "Programming for Problem Solving", "notes": "pdfs/pps.pdf", "syllabus": "pdfs/pps.pdf", "papers": "pdfs/pps.pdf" },
+          { "name": "Engineering Graphics", "notes": "pdfs/eg.pdf", "syllabus": "pdfs/eg.pdf", "papers": "pdfs/eg.pdf" },
+          { "name": "Basic Electrical Engineering", "notes": "pdfs/bee.pdf", "syllabus": "pdfs/bee.pdf", "papers": "pdfs/bee.pdf" }
+        ]
+      },
+      "1-2": {
+        "title": "1st Year - Semester 2",
+        "subjects": [
+          { "name": "Mathematics-II", "notes": "pdfs/m2.pdf", "syllabus": "pdfs/m2.pdf", "papers": "pdfs/m2.pdf" },
+          { "name": "Chemistry", "notes": "pdfs/che.pdf", "syllabus": "pdfs/che.pdf", "papers": "pdfs/che.pdf" },
+          { "name": "Data Structures", "notes": "pdfs/ds.pdf", "syllabus": "pdfs/ds.pdf", "papers": "pdfs/ds.pdf" },
+          { "name": "Digital Logic Design", "notes": "pdfs/dld.pdf", "syllabus": "pdfs/dld.pdf", "papers": "pdfs/dld.pdf" },
+          { "name": "Environmental Science", "notes": "pdfs/env.pdf", "syllabus": "pdfs/env.pdf", "papers": "pdfs/env.pdf" }
+        ]
+      },
+      "2-1": {
+        "title": "2nd Year - Semester 1",
+        "subjects": [
+          { "name": "Object Oriented Programming", "notes": "pdfs/oop.pdf", "syllabus": "pdfs/oop.pdf", "papers": "pdfs/oop.pdf" },
+          { "name": "Computer Organization", "notes": "pdfs/co.pdf", "syllabus": "pdfs/co.pdf", "papers": "pdfs/co.pdf" },
+          { "name": "Database Management Systems", "notes": "pdfs/dbms.pdf", "syllabus": "pdfs/dbms.pdf", "papers": "pdfs/dbms.pdf" },
+          { "name": "Operating Systems", "notes": "pdfs/os.pdf", "syllabus": "pdfs/os.pdf", "papers": "pdfs/os.pdf" },
+          { "name": "Discrete Mathematics", "notes": "pdfs/dm.pdf", "syllabus": "pdfs/dm.pdf", "papers": "pdfs/dm.pdf" }
+        ]
+      },
+      "2-2": {
+        "title": "2nd Year - Semester 2",
+        "subjects": [
+          { "name": "Design and Analysis of Algorithms", "notes": "pdfs/daa.pdf", "syllabus": "pdfs/daa.pdf", "papers": "pdfs/daa.pdf" },
+          { "name": "Software Engineering", "notes": "pdfs/se.pdf", "syllabus": "pdfs/se.pdf", "papers": "pdfs/se.pdf" },
+          { "name": "Computer Networks", "notes": "pdfs/cn.pdf", "syllabus": "pdfs/cn.pdf", "papers": "pdfs/cn.pdf" },
+          { "name": "Java Programming", "notes": "pdfs/java.pdf", "syllabus": "pdfs/java.pdf", "papers": "pdfs/java.pdf" },
+          { "name": "Probability and Statistics", "notes": "pdfs/ps.pdf", "syllabus": "pdfs/ps.pdf", "papers": "pdfs/ps.pdf" }
+        ]
+      },
+      "3-1": {
+        "title": "3rd Year - Semester 1",
+        "subjects": [
+          { "name": "Machine Learning", "notes": "pdfs/ml.pdf", "syllabus": "pdfs/ml.pdf", "papers": "pdfs/ml.pdf" },
+          { "name": "Web Technologies", "notes": "pdfs/wt.pdf", "syllabus": "pdfs/wt.pdf", "papers": "pdfs/wt.pdf" },
+          { "name": "Artificial Intelligence", "notes": "pdfs/ai.pdf", "syllabus": "pdfs/ai.pdf", "papers": "pdfs/ai.pdf" },
+          { "name": "Compiler Design", "notes": "pdfs/cd.pdf", "syllabus": "pdfs/cd.pdf", "papers": "pdfs/cd.pdf" },
+          { "name": "Data Warehousing", "notes": "pdfs/dw.pdf", "syllabus": "pdfs/dw.pdf", "papers": "pdfs/dw.pdf" }
+        ]
+      },
+      "3-2": {
+        "title": "3rd Year - Semester 2",
+        "subjects": [
+          { "name": "Cloud Computing", "notes": "pdfs/cc.pdf", "syllabus": "pdfs/cc.pdf", "papers": "pdfs/cc.pdf" },
+          { "name": "Internet of Things", "notes": "pdfs/iot.pdf", "syllabus": "pdfs/iot.pdf", "papers": "pdfs/iot.pdf" },
+          { "name": "Cyber Security", "notes": "pdfs/cyber.pdf", "syllabus": "pdfs/cyber.pdf", "papers": "pdfs/cyber.pdf" },
+          { "name": "Mobile Application Development", "notes": "pdfs/mad.pdf", "syllabus": "pdfs/mad.pdf", "papers": "pdfs/mad.pdf" },
+          { "name": "Big Data Analytics", "notes": "pdfs/bda.pdf", "syllabus": "pdfs/bda.pdf", "papers": "pdfs/bda.pdf" }
+        ]
+      },
+      "4-1": {
+        "title": "4th Year - Semester 1",
+        "subjects": [
+          { "name": "Deep Learning", "notes": "pdfs/dl.pdf", "syllabus": "pdfs/dl.pdf", "papers": "pdfs/dl.pdf" },
+          { "name": "Blockchain Technology", "notes": "pdfs/bt.pdf", "syllabus": "pdfs/bt.pdf", "papers": "pdfs/bt.pdf" },
+          { "name": "Distributed Systems", "notes": "pdfs/ds.pdf", "syllabus": "pdfs/ds.pdf", "papers": "pdfs/ds.pdf" },
+          { "name": "Project Work-I", "notes": "pdfs/p1.pdf", "syllabus": "pdfs/p1.pdf", "papers": "pdfs/p1.pdf" }
+        ]
+      },
+      "4-2": {
+        "title": "4th Year - Semester 2",
+        "subjects": [
+          { "name": "Project Work-II", "notes": "pdfs/p2.pdf", "syllabus": "pdfs/p2.pdf", "papers": "pdfs/p2.pdf" },
+          { "name": "Internship", "notes": "pdfs/int.pdf", "syllabus": "pdfs/int.pdf", "papers": "pdfs/int.pdf" },
+          { "name": "Seminar", "notes": "pdfs/sem.pdf", "syllabus": "pdfs/sem.pdf", "papers": "pdfs/sem.pdf" }
+        ]
+      },
+      "5-1": { "title": "Skill Courses", "subjects": [] }
+    }
+  },
+  "CSSE": {
+    "title": "Computer Science & Systems Engineering",
+    "semesters": {
+      "1-1": {
+        "title": "1st Year - Semester 1",
+        "subjects": [
+          { "name": "Data Structures", "notes": "pdfs/ds.pdf", "syllabus": "pdfs/ds.pdf", "papers": "pdfs/ds.pdf" },
+          { "name": "Object Oriented Programming", "notes": "pdfs/oop.pdf", "syllabus": "pdfs/oop.pdf", "papers": "pdfs/oop.pdf" }
+        ]
+      },
+      "1-2": {
+        "title": "1st Year - Semester 2",
+        "subjects": [
+          { "name": "DBMS", "notes": "pdfs/dbms.pdf", "syllabus": "pdfs/dbms.pdf", "papers": "pdfs/dbms.pdf" },
+          { "name": "Operating Systems", "notes": "pdfs/os.pdf", "syllabus": "pdfs/os.pdf", "papers": "pdfs/os.pdf" },
+          { "name": "Computer Networks", "notes": "pdfs/cn.pdf", "syllabus": "pdfs/cn.pdf", "papers": "pdfs/cn.pdf" }
+        ]
+      },
+      "2-1": {
+        "title": "2nd Year - Semester 1",
+        "subjects": [
+          { "name": "Software Engineering", "notes": "pdfs/se.pdf", "syllabus": "pdfs/se.pdf", "papers": "pdfs/se.pdf" },
+          { "name": "Compiler Design", "notes": "pdfs/cd.pdf", "syllabus": "pdfs/cd.pdf", "papers": "pdfs/cd.pdf" },
+          { "name": "System Software", "notes": "pdfs/ss.pdf", "syllabus": "pdfs/ss.pdf", "papers": "pdfs/ss.pdf" }
+        ]
+      },
+      "2-2": {
+        "title": "2nd Year - Semester 2",
+        "subjects": [
+          { "name": "Java Programming", "notes": "pdfs/java.pdf", "syllabus": "pdfs/java.pdf", "papers": "pdfs/java.pdf" },
+          { "name": "Microprocessors", "notes": "pdfs/mp.pdf", "syllabus": "pdfs/mp.pdf", "papers": "pdfs/mp.pdf" }
+        ]
+      },
+      "3-1": {
+        "title": "3rd Year - Semester 1",
+        "subjects": [
+          { "name": "Artificial Intelligence", "notes": "pdfs/ai.pdf", "syllabus": "pdfs/ai.pdf", "papers": "pdfs/ai.pdf" },
+          { "name": "Cloud Computing", "notes": "pdfs/cc.pdf", "syllabus": "pdfs/cc.pdf", "papers": "pdfs/cc.pdf" },
+          { "name": "Cyber Security", "notes": "pdfs/cyber.pdf", "syllabus": "pdfs/cyber.pdf", "papers": "pdfs/cyber.pdf" },
+          { "name": "Distributed Systems", "notes": "pdfs/ds.pdf", "syllabus": "pdfs/ds.pdf", "papers": "pdfs/ds.pdf" },
+          { "name": "Web Technologies", "notes": "pdfs/wt.pdf", "syllabus": "pdfs/wt.pdf", "papers": "pdfs/wt.pdf" }
+        ]
+      },
+      "3-2": {
+        "title": "3rd Year - Semester 2",
+        "subjects": [
+          { "name": "Machine Learning", "notes": "pdfs/ml.pdf", "syllabus": "pdfs/ml.pdf", "papers": "pdfs/ml.pdf" },
+          { "name": "IoT", "notes": "pdfs/iot.pdf", "syllabus": "pdfs/iot.pdf", "papers": "pdfs/iot.pdf" },
+          { "name": "Big Data Analytics", "notes": "pdfs/bda.pdf", "syllabus": "pdfs/bda.pdf", "papers": "pdfs/bda.pdf" },
+          { "name": "Mobile Computing", "notes": "pdfs/mc.pdf", "syllabus": "pdfs/mc.pdf", "papers": "pdfs/mc.pdf" },
+          { "name": "Data Mining", "notes": "pdfs/dm.pdf", "syllabus": "pdfs/dm.pdf", "papers": "pdfs/dm.pdf" }
+        ]
+      },
+      "4-1": {
+        "title": "4th Year - Semester 1",
+        "subjects": [
+          { "name": "Project Work-I", "notes": "pdfs/p1.pdf", "syllabus": "pdfs/p1.pdf", "papers": "pdfs/p1.pdf" },
+          { "name": "Seminar", "notes": "pdfs/sem.pdf", "syllabus": "pdfs/sem.pdf", "papers": "pdfs/sem.pdf" }
+        ]
+      },
+      "4-2": {
+        "title": "4th Year - Semester 2",
+        "subjects": [
+          { "name": "Project Work-II", "notes": "pdfs/p2.pdf", "syllabus": "pdfs/p2.pdf", "papers": "pdfs/p2.pdf" },
+          { "name": "Internship", "notes": "pdfs/int.pdf", "syllabus": "pdfs/int.pdf", "papers": "pdfs/int.pdf" }
+        ]
+      },
+      "5-1": { "title": "Skill Courses", "subjects": [] }
+    }
+  }
+}

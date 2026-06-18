@@ -1,0 +1,280 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - Learning Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <!--header section starts     ---->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">LEARNING PAGE</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses.." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="images/pic1.jpg" alt="photo" class="user-pfp">
+                <h3 class="user-name">Durga</h3>
+                <span class="user-role">student</span>
+                <a href="profile.html" class="btn">view profile</a>
+            </div>
+        </section>
+    </header>
+
+    <div class="side-bar">
+        <div class="close-side-bar">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="profile">
+            <img src="images/pic1.jpg" alt="photo" class="user-pfp">
+            <h3 class="user-name">Durga</h3>
+            <span class="user-role">student</span>
+            <a href="profile.html" class="btn">view profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+        </nav>
+    </div>
+
+    <!-- Profile Workspace -->
+    <main class="profile-container">
+        
+        <!-- Top Profile Hub -->
+        <div class="profile-header">
+            <div class="image-container">
+                <img src="images/pic1.jpg" alt="Profile Picture" class="user-pfp">
+            </div>
+            <div class="info">
+                <h2 class="user-name">Durga</h2>
+                <p class="user-role">3rd Year Student</p>
+                <button class="inline-btn" id="open-edit-btn" style="margin-top: 1.5rem;">
+                    <i class="fas fa-edit"></i> Edit Profile
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="profile-tabs">
+            <button class="tab-btn active" data-target="tab-profile">Profile Info</button>
+            <button class="tab-btn" data-target="tab-academic">Academic Details</button>
+            <button class="tab-btn" data-target="tab-settings">Settings</button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div id="tab-profile" class="tab-content active">
+            <div class="cards-grid">
+                <!-- Personal Info Card -->
+                <div class="profile-card">
+                    <h3><i class="fas fa-user-circle"></i> Profile Information</h3>
+                    <div class="detail-item">
+                        <span class="label">Full Name:</span>
+                        <span class="value" id="profile-name">Durga</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Student ID:</span>
+                        <span class="value" id="profile-sid">LEARN2025ST001</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Email:</span>
+                        <span class="value" id="profile-email">example@email.com</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Phone:</span>
+                        <span class="value" id="profile-phone">1234567890</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Department:</span>
+                        <span class="value" id="profile-dept">Computer Science</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Year:</span>
+                        <span class="value" id="profile-year">3rd Year</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Semester:</span>
+                        <span class="value" id="profile-sem">6th Semester</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">DOB:</span>
+                        <span class="value" id="profile-dob">2005-01-01</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Gender:</span>
+                        <span class="value" id="profile-gender">Male</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Address:</span>
+                        <span class="value" id="profile-address">Your City, State</span>
+                    </div>
+                </div>
+
+                <!-- Account Info Card -->
+                <div class="profile-card">
+                    <h3><i class="fas fa-shield-alt"></i> Account Information</h3>
+                    <div class="detail-item">
+                        <span class="label">Username:</span>
+                        <span class="value" id="account-username">durga_user</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Registration No:</span>
+                        <span class="value" id="account-reg">REG2025001</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Last Login:</span>
+                        <span class="value" id="account-login">2024-03-20 10:00 AM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-academic" class="tab-content">
+            <div class="profile-card" style="max-width: 80rem; margin: 0 auto;">
+                <h3><i class="fas fa-graduation-cap"></i> Academic Information</h3>
+                <div class="detail-item">
+                    <span class="label">Branch:</span>
+                    <span class="value" id="academic-branch">Computer Science</span>
+                </div>
+                <div class="stats-grid" style="margin-top: 2rem;">
+                    <div class="stat-box">
+                        <span class="count" id="academic-cgpa">8.5</span>
+                        <span class="label">Current CGPA</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="count" id="academic-attendance">85%</span>
+                        <span class="label">Attendance</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="count" id="academic-courses">6</span>
+                        <span class="label">Enrolled Courses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-settings" class="tab-content">
+            <div class="cards-grid">
+                <div class="profile-card">
+                    <h3><i class="fas fa-cog"></i> Settings</h3>
+                    <button class="btn" onclick="alert('Change Password feature coming soon!')">Change Password</button>
+                    <button class="option-btn" id="logout-btn" onclick="location.href='login.html'">Logout</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Edit Profile Modal -->
+    <div class="modal" id="edit-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Profile</h2>
+                <i class="fas fa-times close-modal" id="close-modal-btn"></i>
+            </div>
+            <form id="edit-profile-form">
+                <div class="edit-pfp-container">
+                    <img src="images/pic1.jpg" alt="Preview" id="preview-image">
+                    <br>
+                    <label class="file-input-label">
+                        <i class="fas fa-camera"></i> Change Picture
+                        <input type="file" id="edit-pfp" accept="image/*">
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="edit-name" required>
+                </div>
+                <div class="flex-btn">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Email</label>
+                        <input type="email" id="edit-email" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Phone Number</label>
+                        <input type="number" id="edit-phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Department</label>
+                    <select id="edit-dept">
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Electronics & Communication">Electronics & Communication</option>
+                        <option value="Electrical & Electronics">Electrical & Electronics</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                    </select>
+                </div>
+                <div class="flex-btn">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Year</label>
+                        <select id="edit-year">
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                            <option value="4th Year">4th Year</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Semester</label>
+                        <select id="edit-sem">
+                            <option value="1st Semester">1st Semester</option>
+                            <option value="2nd Semester">2nd Semester</option>
+                            <option value="3rd Semester">3rd Semester</option>
+                            <option value="4th Semester">4th Semester</option>
+                            <option value="5th Semester">5th Semester</option>
+                            <option value="6th Semester">6th Semester</option>
+                            <option value="7th Semester">7th Semester</option>
+                            <option value="8th Semester">8th Semester</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date" id="edit-dob" required>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select id="edit-gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea id="edit-address" rows="3" required></textarea>
+                </div>
+
+                <div class="flex-btn">
+                    <button type="submit" class="btn">Save Changes</button>
+                    <button type="button" class="delete-btn" id="cancel-edit-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--footer  section starts     ---->
+    <footer class="footer">
+        &copy; copyright @2025 by <span>Durga</span>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

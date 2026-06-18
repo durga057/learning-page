@@ -1,0 +1,346 @@
+
+<html lang="en">
+<head>
+<title>CSSE Syllabus - Learning Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+<link rel="stylesheet" href="styles.css">
+ <style>
+  .subjects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between subjects */
+}
+
+.subject-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.subject-row h3 {
+    margin: 0;
+    flex: 1;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 0.5rem; /* Space between buttons */
+}
+
+.download-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .semester-content {
+        padding: 15px;
+    }
+
+    .subject-header h3 {
+        font-size: 18px;
+    }
+
+    .download-button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+ </style>
+
+
+</head>
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">LEARNING PAGE</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses.." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="images/pic1.jpg" alt="photo">
+                <h3>Durga</h3>
+                <span>student</span>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html"  class="option-btn">login</a>
+                    <a href="registre.html" class="option-btn">register</a>
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+<div class="side-bar">
+    <div class="close-side-bar">
+        <i class="fa fa-times"></i>
+    </div>
+    <div class="profile">
+        <img src="images/pic1.jpg" alt="photo">
+        <h3></h3>
+        <span></span>
+        <a href="profile.html" class="btn">view profile</a>
+    </div>
+    <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>  
+        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+        <a href="contact.html"><i class="fas fa-headset"></i><span>Contact Us</span></a>
+    </nav>
+</div>
+
+<main>
+    <aside class="sidebar">
+        <div class="year-container">
+            <button class="year-button" data-year="1">
+                1st Year
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <div class="semester-list">
+                <button class="semester-button" data-sem="1-1">Semester 1</button>
+                <button class="semester-button" data-sem="1-2">Semester 2</button>
+            </div>
+        </div>
+
+        <div class="year-container">
+            <button class="year-button" data-year="2">
+                2nd Year
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <div class="semester-list">
+                <button class="semester-button" data-sem="2-1">Semester 1</button>
+                <button class="semester-button" data-sem="2-2">Semester 2</button>
+            </div>
+        </div>
+
+        <div class="year-container">
+            <button class="year-button" data-year="3">
+                3rd Year
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <div class="semester-list">
+                <button class="semester-button" data-sem="3-1">Semester 1</button>
+                <button class="semester-button" data-sem="3-2">Semester 2</button>
+            </div>
+        </div>
+
+        <div class="year-container">
+            <button class="year-button" data-year="4">
+                4th Year
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <div class="semester-list">
+                <button class="semester-button" data-sem="4-1">Semester 1</button>
+                <button class="semester-button" data-sem="4-2">Semester 2</button>
+            </div>
+        </div> 
+        <div class="year-container">
+            <button class="year-button" data-year="5">
+                Skill courses
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <div class="semester-list">
+                <button class="semester-button" data-sem="5-1">additional Courses</button>
+                
+            </div>
+        </div> 
+    </aside>
+    <section class="content">
+        <div class="semester-content" id="sem-1-1">
+            <h2>CSSE - 1st Year - Semester 1</h2>
+            <div class="subjects-grid">
+                <div class="subject-row">
+                    <h3>Programming in C</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+                <div class="subject-row">
+                    <h3>Data Structures</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="semester-content" id="sem-1-2">
+            <h2>CSSE - 1st Year - Semester 2</h2>
+            <div class="subjects-grid">
+                <div class="subject-row">
+                    <h3>Object Oriented Programming</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+                <div class="subject-row">
+                    <h3>Operating Systems</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="semester-content" id="sem-2-1">
+            <h2>CSSE - 2nd Year - Semester 1</h2>
+            <div class="subjects-grid">
+                <div class="subject-row">
+                    <h3>Database Management Systems</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+                <div class="subject-row">
+                    <h3>Computer Networks</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="semester-content" id="sem-2-2">
+            <h2>CSSE - 2nd Year - Semester 2</h2>
+            <div class="subjects-grid">
+                <div class="subject-row">
+                    <h3>System Software</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+                <div class="subject-row">
+                    <h3>Compiler Design</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="semester-content" id="sem-3-1">
+            <h2>CSSE - 3rd Year - Semester 1</h2>
+            <div class="subjects-grid">
+                <div class="subject-row">
+                    <h3>Embedded Systems</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+                <div class="subject-row">
+                    <h3>Artificial Intelligence</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="semester-content" id="sem-3-2">
+            <h2>CSSE - 3rd Year - Semester 2</h2>
+            <div class="subjects-grid">
+                <div class="subject-row">
+                    <h3>Cyber Security</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+                <div class="subject-row">
+                    <h3>Distributed Systems</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="semester-content" id="sem-4-1">
+            <h2>CSSE - 4th Year - Semester 1</h2>
+            <div class="subjects-grid">
+                <div class="subject-row">
+                    <h3>Cloud Computing</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+                <div class="subject-row">
+                    <h3>Internet of Things</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="semester-content" id="sem-4-2">
+            <h2>CSSE - 4th Year - Semester 2</h2>
+            <div class="subjects-grid">
+                <div class="subject-row">
+                    <h3>Software Engineering</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+                <div class="subject-row">
+                    <h3>Project Work</h3>
+                    <div class="download-buttons">
+                        <a href="pdfs/" class="download-button" >Complete Notes</a>
+                        <a href="pdfs/" class="download-button" >Syllabus</a>
+                        <a href="pdfs/" class="download-button" >Question Papers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    &copy; copyright @2025 by <span>Durga</span>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
